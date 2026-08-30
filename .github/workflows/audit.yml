@@ -1,0 +1,32 @@
+# Pages deploys this repo's root on its own ("deploy from a branch"), so this
+# workflow does not deploy — it exists to stop a broken build from becoming what
+# Pages serves.
+#
+# The static half of audit.py needs no dependencies and catches exactly the SEO
+# wiring that breaks invisibly in a browser: non-reciprocal hreflang sets,
+# canonicals pointing at the wrong language, pages missing from the sitemap,
+# titles duplicated across languages.
+name: Audit
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Committed HTML matches content.py
+        run: |
+          python3 build.py > /dev/null
+          git diff --exit-code || {
+            echo "::error::The build is stale - run 'python3 build.py' and commit the result."
+            exit 1
+          }
+
+      - name: Indexability checks
+        run: python3 audit.py
