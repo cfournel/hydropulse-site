@@ -353,13 +353,14 @@ PRIVACY_BODY = """<h1>Privacy Policy</h1>
 <p class="muted">Last updated: %(updated)s</p>
 
 <p class="lede">HydroPulse estimates your hydration needs from data that stays on
-your watch. There is no account, no analytics SDK and no advertising SDK.</p>
+your watch. There is no account, no advertising SDK and no product analytics.</p>
 
 <h2>Summary</h2>
 <div class="callout">
-  <p>We do not sell data, run ads, or use third-party analytics or advertising
-  SDKs. Anonymous weather lookups are the only data this app sends off-device —
-  coordinates only, with no account or device identifier attached.</p>
+  <p>We do not sell data, run ads, or track what you do in the app. Two things
+  leave the device, and neither carries your health data: an anonymous weather
+  lookup (coordinates only, no account or device identifier), and a crash report
+  if the app fails.</p>
 </div>
 
 <h2>Data we process</h2>
@@ -378,23 +379,43 @@ your watch. There is no account, no analytics SDK and no advertising SDK.</p>
         <td>Personalise the hydration model</td><td>Locally on-device (Android DataStore)</td><td>No</td></tr>
     <tr><td>Water intake log (amount and timestamp)</td><td>Show history and feed the hydration ledger</td>
         <td>Locally on-device (Room database)</td><td>No</td></tr>
+    <tr><td>Crash reports: stack trace, device model, OS version, app version, and a Firebase installation identifier</td>
+        <td>Diagnose and fix crashes</td><td>Sent on next launch after a crash; not stored in the app</td>
+        <td>Yes — to Firebase Crashlytics (Google). Contains no heart rate, no activity, no water log and no location</td></tr>
   </tbody>
 </table>
 </div>
 
+<h2>Crash reporting</h2>
+<p>HydroPulse uses <strong>Firebase Crashlytics</strong> (Google) so that a crash
+can be diagnosed and fixed. When the app fails, it sends a stack trace along with
+the device model, OS version, app version and a Firebase installation identifier
+&mdash; an identifier for the app install, not for you.</p>
+<div class="callout">
+  <p>A crash report never contains your heart rate, your activity, your water log,
+  your profile or your location. It describes the failure, not the user.</p>
+</div>
+<p>Crashlytics is governed by
+<a href="https://firebase.google.com/support/privacy" rel="noopener">Google&rsquo;s
+Firebase privacy documentation</a>. Reports are retained for a limited period and
+then deleted.</p>
+
 <h2>What we do not do</h2>
 <ul>
-  <li>No account creation, no login, no user identifiers.</li>
-  <li>No advertising or analytics SDKs.</li>
-  <li>No backend of ours — the only network calls are anonymous weather lookups.</li>
+  <li>No account creation, no login, no advertising identifiers.</li>
+  <li>No advertising SDKs, and no product or usage analytics &mdash; nothing records
+    which screens you open or how often you use the app.</li>
+  <li>No backend of ours &mdash; the only network calls are the weather lookup and,
+    after a failure, a crash report.</li>
   <li>No sale or sharing of personal data with third parties.</li>
 </ul>
 
 <h2>Health data</h2>
 <p>Heart rate and activity data are sensitive under Google Play&rsquo;s health and
 fitness data policies. HydroPulse uses this data solely to compute the in-app
-hydration estimate, does not transmit raw heart-rate or activity data anywhere,
-and does not use it for advertising or profiling.</p>
+hydration estimate, does not transmit raw heart-rate or activity data anywhere
+&mdash; crash reports included &mdash; and does not use it for advertising or
+profiling.</p>
 
 <h2>Permissions requested, and why</h2>
 <ul>
@@ -407,9 +428,12 @@ and does not use it for advertising or profiling.</p>
 for the components it can no longer sense.</p>
 
 <h2>Data retention and deletion</h2>
-<p>All personal data — profile, water log, ledger — lives in local app
+<p>All personal data &mdash; profile, water log, ledger &mdash; lives in local app
 storage on your watch. Uninstalling the app deletes it. There is no server-side
-account or profile to delete, because none exists.</p>
+account or profile to delete, because none exists. The one exception is crash
+reports, which sit with Firebase Crashlytics under Google&rsquo;s own retention
+period; write to the address below to have any relating to your installation
+removed.</p>
 
 <h2>Children&rsquo;s privacy</h2>
 <p>HydroPulse is not directed at children under 13 (or the relevant age of digital
@@ -458,9 +482,10 @@ that are out of date. The app is provided &ldquo;as is&rdquo;, without warranty 
 its estimates are accurate for any particular person or situation.</p>
 
 <h2>Third-party services</h2>
-<p>Weather data comes from Open-Meteo (open-meteo.com). Distribution and billing
-are handled by Google Play. Neither receives personal data from HydroPulse beyond
-what is described in the <a href="/privacy/">privacy policy</a>.</p>
+<p>Weather data comes from Open-Meteo (open-meteo.com), crash reporting from
+Firebase Crashlytics (Google), and distribution and billing from Google Play. None
+of them receives personal data from HydroPulse beyond what is described in the
+<a href="/privacy/">privacy policy</a>.</p>
 
 <h2>Refunds</h2>
 <p>Refunds are handled by Google Play under its own refund policy. We have no

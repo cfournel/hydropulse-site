@@ -69,9 +69,10 @@ EN = {
         ],
         "privacy_title": "Private by design",
         "privacy_body": "Your heart rate, activity and drink log never leave the watch. There is no "
-                        "account, no analytics SDK and no advertising SDK. The only thing HydroPulse "
-                        "sends off-device is a pair of coordinates to a public weather service, with "
-                        "no identifier attached.",
+                        "account, no advertising SDK and no product analytics — nothing tracks what "
+                        "you do in the app. Two things do leave the device: a pair of coordinates to "
+                        "a public weather service, with no identifier attached, and a crash report if "
+                        "the app fails. Neither carries your health data.",
         "privacy_link": "Read the full privacy policy",
         "safety_title": "Not a medical device",
         "safety_body": "HydroPulse produces an estimate, not a measurement. It is a wellness tool, not "
@@ -545,9 +546,11 @@ FR = {
         ],
         "privacy_title": "Confidentielle par conception",
         "privacy_body": "Votre fréquence cardiaque, votre activité et votre journal de boisson ne "
-                        "quittent jamais la montre. Aucun compte, aucun SDK d'analyse, aucun SDK "
-                        "publicitaire. La seule chose qu'HydroPulse envoie hors de l'appareil, ce sont "
-                        "des coordonnées vers un service météo public, sans aucun identifiant.",
+                        "quittent jamais la montre. Aucun compte, aucun SDK publicitaire, aucune "
+                        "mesure d'audience : rien ne piste ce que vous faites dans l'application. Deux "
+                        "choses sortent de l'appareil : des coordonnées vers un service météo public, "
+                        "sans aucun identifiant, et un rapport de plantage si l'application échoue. "
+                        "Ni l'un ni l'autre ne transporte vos données de santé.",
         "privacy_link": "Lire la politique de confidentialité complète",
         "safety_title": "Ce n'est pas un dispositif médical",
         "safety_body": "HydroPulse produit une estimation, pas une mesure. C'est un outil de bien-être, "
@@ -1054,9 +1057,11 @@ ES = {
         ],
         "privacy_title": "Privada por diseño",
         "privacy_body": "Tu frecuencia cardíaca, tu actividad y tu registro de bebidas nunca salen del "
-                        "reloj. No hay cuenta, ni SDK de analítica, ni SDK publicitario. Lo único que "
-                        "HydroPulse envía fuera del dispositivo es un par de coordenadas a un servicio "
-                        "meteorológico público, sin identificador alguno.",
+                        "reloj. No hay cuenta, ni SDK publicitario, ni analítica de producto: nada "
+                        "rastrea lo que haces en la aplicación. Dos cosas sí salen del dispositivo: un "
+                        "par de coordenadas a un servicio meteorológico público, sin identificador "
+                        "alguno, y un informe de fallo si la aplicación se cae. Ninguno lleva tus "
+                        "datos de salud.",
         "privacy_link": "Leer la política de privacidad completa",
         "safety_title": "No es un dispositivo médico",
         "safety_body": "HydroPulse produce una estimación, no una medición. Es una herramienta de "
