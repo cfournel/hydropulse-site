@@ -1,0 +1,145 @@
+/* HydroPulse — the only stylesheet. Palette taken from the app itself: the
+   near-black watch ground and the cyan of the Log water button. Light mode
+   darkens the cyan for contrast, since the app's own cyan on white fails AA. */
+:root {
+  --hydro: #0F7FAE;
+  --hydro-deep: #0B6288;
+  --bg: #ffffff;
+  --surface: #f2f7f9;
+  --text: #161e21;
+  --muted: #566368;
+  --rule: #dbe4e8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --hydro: #58C4EE;
+    --hydro-deep: #86D6F4;
+    --bg: #0F191C;
+    --surface: #172428;
+    --text: #e7eef0;
+    --muted: #9aacb2;
+    --rule: #26363b;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.68 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
+a { color: var(--hydro); }
+
+/* Header */
+.site-head {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.1rem 0;
+  margin-bottom: 2.5rem;
+}
+.site-head .wrap {
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* The wordmark spells out the page's own <title>, so it has to wrap gracefully
+   and stay clear of the language switcher on a phone. */
+.mark {
+  display: inline-flex; align-items: center; gap: .7rem;
+  font-weight: 600; color: var(--hydro); text-decoration: none;
+  font-size: 1rem; line-height: 1.3;
+  flex: 1 1 20rem; max-width: 36rem;
+}
+.mark svg { display: block; flex: none; }
+.mark span { display: block; }
+.langs { display: flex; gap: .5rem; font-size: .82rem; flex: none; }
+.langs a {
+  text-decoration: none; color: var(--muted);
+  border: 1px solid var(--rule); border-radius: 999px; padding: .18rem .6rem;
+}
+.langs a[aria-current="true"] { color: var(--bg); background: var(--hydro); border-color: var(--hydro); }
+
+/* Type */
+h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -.015em; margin: 0 0 .75rem; }
+h2 {
+  font-size: 1.02rem; margin: 2.5rem 0 .6rem; color: var(--hydro);
+  letter-spacing: .05em; text-transform: uppercase;
+}
+h3 { font-size: 1.05rem; margin: 1.6rem 0 .35rem; }
+p, li { color: var(--text); }
+.lede { font-size: 1.1rem; color: var(--muted); margin: 0 0 1.5rem; }
+ul { padding-left: 1.15rem; }
+li { margin: .45rem 0; }
+.muted { color: var(--muted); font-size: .9rem; }
+
+/* Blocks */
+.callout {
+  background: var(--surface); border-left: 3px solid var(--hydro);
+  padding: .95rem 1.1rem; border-radius: 0 6px 6px 0; margin: 1.4rem 0;
+}
+.callout p { margin: 0; }
+/* Feature and capability lists. A droplet marker replaces the bullet, so the
+   list reads as claims about the app rather than as prose run on. */
+.checks { list-style: none; padding: 0; }
+.checks li { position: relative; padding-left: 1.6rem; }
+.checks li::before {
+  content: ""; position: absolute; left: .25rem; top: .62em;
+  width: .48rem; height: .48rem; border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg); background: var(--hydro);
+}
+/* Official Google Play badge. The artwork must not be recoloured or cropped, so
+   the only styling here is sizing and the clear space the guidelines ask for. */
+.cta { display: inline-block; line-height: 0; margin: .4rem 0 0; }
+.cta img { display: block; width: 216px; height: auto; max-width: 100%; }
+/* Watch captures: square, so a tighter grid than a phone screenshot needs.
+   Softly rounded rather than fully circular — the notification capture is a
+   card that runs to the edges, and a circular mask cuts its action button off.
+   Fixed aspect via each img's own width/height attributes, so the grid never
+   reflows as they load. */
+.shots {
+  display: grid; gap: 1rem; padding: 0; list-style: none; margin: 1.25rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 11rem));
+}
+.shots li { margin: 0; }
+.shots figure { margin: 0; }
+.shots img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--rule); border-radius: 14%; background: #000;
+}
+.shots figcaption { font-size: .8rem; color: var(--muted); margin-top: .5rem; line-height: 1.4; }
+.cards { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); margin: 1.25rem 0; padding: 0; list-style: none; }
+.cards li { margin: 0; }
+.cards a {
+  display: block; height: 100%; text-decoration: none; color: var(--text);
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 10px;
+  padding: .9rem 1rem;
+}
+.cards a:hover { border-color: var(--hydro); }
+.cards strong { display: block; color: var(--hydro); margin-bottom: .2rem; }
+.cards span { font-size: .875rem; color: var(--muted); }
+.steps { counter-reset: s; list-style: none; padding: 0; }
+.steps li { counter-increment: s; position: relative; padding-left: 2.1rem; margin: .8rem 0; }
+.steps li::before {
+  content: counter(s); position: absolute; left: 0; top: .1rem;
+  width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  background: var(--surface); border: 1px solid var(--rule); color: var(--hydro);
+  font-size: .8rem; font-weight: 600; display: grid; place-items: center;
+}
+.faq h3 { color: var(--text); }
+.crumbs { font-size: .85rem; color: var(--muted); margin: 0 0 1rem; }
+.crumbs a { color: var(--muted); }
+/* The privacy table is the one wide element on the site; it scrolls inside its
+   own box so the page body never scrolls horizontally on a phone. */
+.table-wrap { overflow-x: auto; margin: 1.2rem 0; }
+table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .9rem; }
+th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); }
+th { color: var(--hydro); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; }
+
+/* Footer */
+.site-foot {
+  margin-top: 4rem; padding: 1.75rem 0 3.5rem;
+  border-top: 1px solid var(--rule); color: var(--muted); font-size: .875rem;
+}
+.site-foot ul { list-style: none; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; margin: 0 0 .8rem; }
+.site-foot li { margin: 0; }

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HydroPulse — Smart Hydration Reminders for Wear OS</title>
+<meta name="description" content="A Wear OS water reminder that adapts to your heart rate, your activity and the weather, so it nudges you when your body needs water — not on a fixed timer.">
+<link rel="canonical" href="https://gethydropulse.com/">
+<link rel="alternate" hreflang="en" href="https://gethydropulse.com/">
+<link rel="alternate" hreflang="fr" href="https://gethydropulse.com/fr/">
+<link rel="alternate" hreflang="es" href="https://gethydropulse.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://gethydropulse.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HydroPulse">
+<meta property="og:locale" content="en">
+<meta property="og:title" content="HydroPulse — Smart Hydration Reminders for Wear OS">
+<meta property="og:description" content="A Wear OS water reminder that adapts to your heart rate, your activity and the weather, so it nudges you when your body needs water — not on a fixed timer.">
+<meta property="og:url" content="https://gethydropulse.com/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0F191C">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "HydroPulse", "url": "https://gethydropulse.com/", "inLanguage": ["en", "fr", "es"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "HydroPulse", "operatingSystem": "Wear OS 3.0+", "applicationCategory": "HealthApplication", "description": "A Wear OS water reminder that adapts to your heart rate, your activity and the weather, so it nudges you when your body needs water — not on a fixed timer.", "url": "https://gethydropulse.com/", "inLanguage": "en", "installUrl": "https://play.google.com/store/apps/details?id=oytaub.hydropulse.app", "offers": {"@type": "Offer", "price": "2.59", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="mark" href="/"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2C12 3.2 5.8 10 5.8 14.1a6.2 6.2 0 0 0 12.4 0C18.2 10 12 3.2 12 3.2Z"/><path d="M8.4 14.4h2.1l1.1-2.4 1.4 4 1.1-1.6h1.5"/></svg><span>HydroPulse — Smart Hydration Reminders for Wear OS</span></a>
+  <nav class="langs" aria-label="Language"><a href="/" hreflang="en" aria-current="true">EN</a><a href="/fr/" hreflang="fr" >FR</a><a href="/es/" hreflang="es" >ES</a></nav>
+</div></header>
+<main class="wrap">
+<h1>Hydration reminders that follow your body, not a timer</h1>
+<p class="lede">Most water reminder apps divide a daily goal by your waking hours and buzz on the quotient. HydroPulse runs a fluid-balance model on your watch — heart rate, activity and live weather — and tells you to drink when the balance actually drops.</p>
+<p><a class="cta" href="https://play.google.com/store/apps/details?id=oytaub.hydropulse.app" rel="noopener"><img src="/assets/badges/en.png" width="216" height="84" alt="Get it on Google Play" loading="lazy" decoding="async"></a></p>
+<p class="muted">Wear OS 3.0+. One-time purchase — no subscription, no ads, no account. The app interface is in English.</p>
+<p>An hour at a desk in air conditioning and an hour running in August cost your body wildly different amounts of water. A fixed interval cannot tell them apart, so it is either nagging you when you do not need it or silent when you do — and both failures teach you to ignore it.</p>
+<p>HydroPulse keeps a running ledger instead. Passive loss ticks down from your personal baseline; sweat loss is estimated from how hard your heart is working relative to your own resting and maximum rate; heat and humidity scale that estimate up. Every drink you log credits the ledger back. The alert fires on the balance, so on a cool sedentary day you will barely hear from it, and on a hot training day you will hear from it early.</p>
+<p>It was built for the wrist rather than ported to it: a native tile, a watch-face complication, one-tap logging from the notification, and a recommendation that always names an amount and a reason instead of just saying “drink water”.</p>
+<h2>How HydroPulse decides</h2>
+<ol class="steps"><li>You enter your weight, age and sweat profile once. That sets your personal baseline loss — the water you lose just by being alive and breathing.</li><li>The watch reads your heart rate continuously and converts it into a heart-rate-reserve fraction: how hard you are working relative to your own resting and maximum heart rate, not to an average person's.</li><li>Local temperature and humidity are fetched anonymously and turned into a heat-index multiplier, because the same effort costs far more fluid at 33 °C and 70 % humidity than at 18 °C.</li><li>Every drink you log is credited back to the ledger. When the running balance crosses your threshold, HydroPulse tells you — with a specific millilitre amount and the reason behind it.</li></ol>
+<h2>Why it is not another reminder timer</h2>
+<ul class="checks"><li>A running fluid-balance ledger, not a countdown — the interval between nudges changes with your day.</li><li>Heart-rate-driven sweat estimate, using your own resting and maximum heart rate.</li><li>Live temperature and humidity folded in through a heat-index multiplier.</li><li>Every alert carries a millilitre amount and a plain-language reason: heat, exertion or baseline.</li><li>Three urgency levels — mild, moderate, urgent — so a nudge and a warning do not look identical.</li><li>Native Wear OS tile and watch-face complication: your balance at a glance, no app to open.</li><li>One-tap logging straight from the notification, plus a 15-minute snooze.</li><li>Quiet hours, so it does not wake you.</li><li>mL, fl oz or Imperial units, and your own threshold.</li></ul>
+<h2>On the watch</h2>
+<ul class="shots"><li><figure><img src="/assets/screens/home.webp" width="400" height="400" loading="lazy" decoding="async" alt="HydroPulse home screen showing a 49 % hydration balance and a Log water button"><figcaption>Your balance as a dial, with the amount to drink now.</figcaption></figure></li><li><figure><img src="/assets/screens/notification.webp" width="400" height="400" loading="lazy" decoding="async" alt="A HydroPulse notification recommending 100 mL with a one-tap log action"><figcaption>One tap to log, one to snooze — the phone stays in your pocket.</figcaption></figure></li><li><figure><img src="/assets/screens/history.webp" width="400" height="400" loading="lazy" decoding="async" alt="The history screen listing the day's logged drinks"><figcaption>What you actually drank today, not what you meant to.</figcaption></figure></li><li><figure><img src="/assets/screens/settings.webp" width="400" height="400" loading="lazy" decoding="async" alt="The settings screen with weight, units and threshold options"><figcaption>Your weight, units and threshold — the model fits you.</figcaption></figure></li></ul>
+<h2>Hydration, situation by situation</h2>
+<ul class="cards"><li><a href="/hydration/water-reminder-wear-os/"><strong>On Wear OS</strong><span>A water reminder built for the watch, not a phone app with a complication.</span></a></li><li><a href="/hydration/hydration-for-running-and-training/"><strong>Running &amp; training</strong><span>Sweat-rate-aware reminders for runs, rides and gym sessions.</span></a></li><li><a href="/hydration/drinking-water-in-hot-weather/"><strong>Hot weather</strong><span>When heat and humidity raise your needs, the reminders move first.</span></a></li><li><a href="/hydration/forgetting-to-drink-water-at-work/"><strong>At work</strong><span>For desk days where six hours vanish between two glasses.</span></a></li><li><a href="/hydration/how-much-water-should-you-drink-a-day/"><strong>How much per day</strong><span>Where the 2-litre rule comes from, and why your number is not that.</span></a></li><li><a href="/hydration/signs-of-dehydration/"><strong>Signs of dehydration</strong><span>What mild dehydration actually feels like — and when it stops being mild.</span></a></li><li><a href="/hydration/heart-rate-and-hydration/"><strong>Heart rate &amp; hydration</strong><span>The link between cardiac drift, effort and fluid loss.</span></a></li></ul>
+<h2>Where the model comes from</h2>
+<p>The baseline draws on IOM and EFSA adequate-intake figures, the sweat-rate component on ACSM exercise-hydration guidance, and the environmental multiplier on the US National Weather Service heat-index formula. These are population references adapted to what a watch can actually sense — a well-founded estimate, not a laboratory measurement.</p>
+<h2>Not a medical device</h2>
+<div class="callout"><p>HydroPulse produces an estimate, not a measurement. It is a wellness tool, not a medical device, and it does not diagnose, treat or monitor dehydration or any other condition. If you take diuretics, restrict fluid on medical advice, or have a kidney, heart or endocrine condition, follow your clinician's intake guidance rather than this app's. Seek urgent care for confusion, fainting, or heat illness.</p></div>
+<h2>Private by design</h2>
+<p>Your heart rate, activity and drink log never leave the watch. There is no account, no analytics SDK and no advertising SDK. The only thing HydroPulse sends off-device is a pair of coordinates to a public weather service, with no identifier attached.</p>
+<p><a href="/privacy/">Read the full privacy policy</a></p>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <ul><li><a href="/">Home</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/terms/">Terms of service</a></li><li><a href="https://play.google.com/store/apps/details?id=oytaub.hydropulse.app" rel="noopener">Google Play</a></li></ul>
+  <p>HydroPulse — adaptive hydration for Wear OS. Estimates, not guesses.</p>
+</div></footer>
+</body>
+</html>

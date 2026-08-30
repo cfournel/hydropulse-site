@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Water Reminder App for Wear OS — HydroPulse</title>
+<meta name="description" content="A native Wear OS water reminder with a tile, a complication and one-tap logging. Works on Pixel Watch, Galaxy Watch and any Wear OS 3.0+ device.">
+<link rel="canonical" href="https://gethydropulse.com/hydration/water-reminder-wear-os/">
+<link rel="alternate" hreflang="en" href="https://gethydropulse.com/hydration/water-reminder-wear-os/">
+<link rel="alternate" hreflang="fr" href="https://gethydropulse.com/fr/hydratation/rappel-boire-de-l-eau-wear-os/">
+<link rel="alternate" hreflang="es" href="https://gethydropulse.com/es/hidratacion/recordatorio-de-agua-wear-os/">
+<link rel="alternate" hreflang="x-default" href="https://gethydropulse.com/hydration/water-reminder-wear-os/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HydroPulse">
+<meta property="og:locale" content="en">
+<meta property="og:title" content="Water Reminder App for Wear OS — HydroPulse">
+<meta property="og:description" content="A native Wear OS water reminder with a tile, a complication and one-tap logging. Works on Pixel Watch, Galaxy Watch and any Wear OS 3.0+ device.">
+<meta property="og:url" content="https://gethydropulse.com/hydration/water-reminder-wear-os/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0F191C">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gethydropulse.com/"}, {"@type": "ListItem", "position": 2, "name": "On Wear OS", "item": "https://gethydropulse.com/hydration/water-reminder-wear-os/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Do I need my phone with me?", "acceptedAnswer": {"@type": "Answer", "text": "No. The model, the ledger and the water log all run on the watch. A phone is only involved in the initial install, and the weather lookup uses whatever connection the watch has."}}, {"@type": "Question", "name": "Which watches does it work on?", "acceptedAnswer": {"@type": "Answer", "text": "Any Wear OS 3.0 or newer watch with Google Play services — Pixel Watch, Galaxy Watch 4 and later, TicWatch and comparable devices. Heart-rate accuracy varies by device, and the model degrades gracefully if a sensor is unavailable."}}, {"@type": "Question", "name": "Is there a phone app?", "acceptedAnswer": {"@type": "Answer", "text": "No, and that is deliberate. Everything you need is on the watch, which is also why there is nothing to sync and no account to create."}}, {"@type": "Question", "name": "How much battery does it use?", "acceptedAnswer": {"@type": "Answer", "text": "It uses passive Health Services monitoring rather than a continuous high-rate sensor stream, checks in periodically through WorkManager, and caches weather for 30 minutes. In normal use it is a background app, not a workout tracker."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "HydroPulse", "operatingSystem": "Wear OS 3.0+", "applicationCategory": "HealthApplication", "description": "A native Wear OS water reminder with a tile, a complication and one-tap logging. Works on Pixel Watch, Galaxy Watch and any Wear OS 3.0+ device.", "url": "https://gethydropulse.com/hydration/water-reminder-wear-os/", "inLanguage": "en", "installUrl": "https://play.google.com/store/apps/details?id=oytaub.hydropulse.app", "offers": {"@type": "Offer", "price": "2.59", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="mark" href="/"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2C12 3.2 5.8 10 5.8 14.1a6.2 6.2 0 0 0 12.4 0C18.2 10 12 3.2 12 3.2Z"/><path d="M8.4 14.4h2.1l1.1-2.4 1.4 4 1.1-1.6h1.5"/></svg><span>Water Reminder App for Wear OS — HydroPulse</span></a>
+  <nav class="langs" aria-label="Language"><a href="/hydration/water-reminder-wear-os/" hreflang="en" aria-current="true">EN</a><a href="/fr/hydratation/rappel-boire-de-l-eau-wear-os/" hreflang="fr" >FR</a><a href="/es/hidratacion/recordatorio-de-agua-wear-os/" hreflang="es" >ES</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumbs"><a href="/">Home</a> &rsaquo; On Wear OS</p>
+<h1>A water reminder built for Wear OS</h1>
+<p class="lede">Tile, complication, notification actions and an on-watch model — HydroPulse does its thinking on the wrist, so the reminder arrives where your hands already are.</p>
+<h2>Why the watch is the right place for this</h2>
+<p>Hydration fails on friction. The gap between “I should drink” and a logged glass is usually a phone in another room, and by the time you find it the moment has gone. A wrist notification with a Log water button closes that gap to one tap.</p>
+<p>The watch is also the only device that knows how hard you are working. Heart rate and exercise state come from the sensors on your arm, so the estimate is built from live physiology rather than from a step count synced hours later.</p>
+<p>Most hydration apps in the Play Store are phone apps that ship a watch face complication as an afterthought. HydroPulse is a Wear OS app: the model, the ledger and the database live on the watch, and it keeps working when your phone is not nearby.</p>
+<h2>What HydroPulse does here</h2>
+<ul class="checks"><li>A swipe-away tile showing your current balance without opening anything.</li><li>A watch-face complication, as a ranged value or short text.</li><li>Notifications with Log water and Snooze 15 min as direct actions.</li><li>Room database and profile stored on the watch, so history survives a lost phone connection.</li><li>Wear OS 3.0 and later: Pixel Watch, Galaxy Watch 4 and newer, TicWatch and others.</li></ul>
+<h2>How HydroPulse decides</h2>
+<ol class="steps"><li>You enter your weight, age and sweat profile once. That sets your personal baseline loss — the water you lose just by being alive and breathing.</li><li>The watch reads your heart rate continuously and converts it into a heart-rate-reserve fraction: how hard you are working relative to your own resting and maximum heart rate, not to an average person's.</li><li>Local temperature and humidity are fetched anonymously and turned into a heat-index multiplier, because the same effort costs far more fluid at 33 °C and 70 % humidity than at 18 °C.</li><li>Every drink you log is credited back to the ledger. When the running balance crosses your threshold, HydroPulse tells you — with a specific millilitre amount and the reason behind it.</li></ol>
+<h2>What to expect</h2>
+<p>Install it on the watch, set your weight and units once, and grant heart rate, activity and coarse location when asked — each one feeds a specific part of the model, and the app still works without them using sensible defaults. Battery cost is small: passive heart-rate monitoring and a periodic background check, with weather cached for 30 minutes.</p>
+<ul class="shots"><li><figure><img src="/assets/screens/home.webp" width="400" height="400" loading="lazy" decoding="async" alt="HydroPulse home screen showing a 49 % hydration balance and a Log water button"><figcaption>Your balance as a dial, with the amount to drink now.</figcaption></figure></li><li><figure><img src="/assets/screens/notification.webp" width="400" height="400" loading="lazy" decoding="async" alt="A HydroPulse notification recommending 100 mL with a one-tap log action"><figcaption>One tap to log, one to snooze — the phone stays in your pocket.</figcaption></figure></li></ul>
+<p><a class="cta" href="https://play.google.com/store/apps/details?id=oytaub.hydropulse.app" rel="noopener"><img src="/assets/badges/en.png" width="216" height="84" alt="Get it on Google Play" loading="lazy" decoding="async"></a></p>
+<p class="muted">Wear OS 3.0+. One-time purchase — no subscription, no ads, no account. The app interface is in English.</p>
+<h2>Common questions</h2>
+<div class="faq"><h3>Do I need my phone with me?</h3><p>No. The model, the ledger and the water log all run on the watch. A phone is only involved in the initial install, and the weather lookup uses whatever connection the watch has.</p><h3>Which watches does it work on?</h3><p>Any Wear OS 3.0 or newer watch with Google Play services — Pixel Watch, Galaxy Watch 4 and later, TicWatch and comparable devices. Heart-rate accuracy varies by device, and the model degrades gracefully if a sensor is unavailable.</p><h3>Is there a phone app?</h3><p>No, and that is deliberate. Everything you need is on the watch, which is also why there is nothing to sync and no account to create.</p><h3>How much battery does it use?</h3><p>It uses passive Health Services monitoring rather than a continuous high-rate sensor stream, checks in periodically through WorkManager, and caches weather for 30 minutes. In normal use it is a background app, not a workout tracker.</p></div>
+<h2>Where the model comes from</h2>
+<p>The baseline draws on IOM and EFSA adequate-intake figures, the sweat-rate component on ACSM exercise-hydration guidance, and the environmental multiplier on the US National Weather Service heat-index formula. These are population references adapted to what a watch can actually sense — a well-founded estimate, not a laboratory measurement.</p>
+<h2>Not a medical device</h2>
+<div class="callout"><p>HydroPulse produces an estimate, not a measurement. It is a wellness tool, not a medical device, and it does not diagnose, treat or monitor dehydration or any other condition. If you take diuretics, restrict fluid on medical advice, or have a kidney, heart or endocrine condition, follow your clinician's intake guidance rather than this app's. Seek urgent care for confusion, fainting, or heat illness.</p></div>
+<h2>Private by design</h2>
+<p>Your heart rate, activity and drink log never leave the watch. There is no account, no analytics SDK and no advertising SDK. The only thing HydroPulse sends off-device is a pair of coordinates to a public weather service, with no identifier attached.</p>
+<p><a href="/privacy/">Read the full privacy policy</a></p>
+<h2>More on hydration</h2>
+<ul class="cards"><li><a href="/hydration/hydration-for-running-and-training/"><strong>Running &amp; training</strong><span>Sweat-rate-aware reminders for runs, rides and gym sessions.</span></a></li><li><a href="/hydration/drinking-water-in-hot-weather/"><strong>Hot weather</strong><span>When heat and humidity raise your needs, the reminders move first.</span></a></li><li><a href="/hydration/forgetting-to-drink-water-at-work/"><strong>At work</strong><span>For desk days where six hours vanish between two glasses.</span></a></li><li><a href="/hydration/how-much-water-should-you-drink-a-day/"><strong>How much per day</strong><span>Where the 2-litre rule comes from, and why your number is not that.</span></a></li><li><a href="/hydration/signs-of-dehydration/"><strong>Signs of dehydration</strong><span>What mild dehydration actually feels like — and when it stops being mild.</span></a></li><li><a href="/hydration/heart-rate-and-hydration/"><strong>Heart rate &amp; hydration</strong><span>The link between cardiac drift, effort and fluid loss.</span></a></li></ul>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <ul><li><a href="/">Home</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/terms/">Terms of service</a></li><li><a href="https://play.google.com/store/apps/details?id=oytaub.hydropulse.app" rel="noopener">Google Play</a></li></ul>
+  <p>HydroPulse — adaptive hydration for Wear OS. Estimates, not guesses.</p>
+</div></footer>
+</body>
+</html>

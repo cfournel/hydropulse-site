@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heart Rate and Hydration — How a Watch Estimates Sweat Loss</title>
+<meta name="description" content="Why heart rate is a better proxy for fluid loss than step count, what heart-rate reserve means, and how HydroPulse turns it into millilitres per hour.">
+<link rel="canonical" href="https://gethydropulse.com/hydration/heart-rate-and-hydration/">
+<link rel="alternate" hreflang="en" href="https://gethydropulse.com/hydration/heart-rate-and-hydration/">
+<link rel="alternate" hreflang="fr" href="https://gethydropulse.com/fr/hydratation/frequence-cardiaque-et-hydratation/">
+<link rel="alternate" hreflang="es" href="https://gethydropulse.com/es/hidratacion/frecuencia-cardiaca-e-hidratacion/">
+<link rel="alternate" hreflang="x-default" href="https://gethydropulse.com/hydration/heart-rate-and-hydration/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HydroPulse">
+<meta property="og:locale" content="en">
+<meta property="og:title" content="Heart Rate and Hydration — How a Watch Estimates Sweat Loss">
+<meta property="og:description" content="Why heart rate is a better proxy for fluid loss than step count, what heart-rate reserve means, and how HydroPulse turns it into millilitres per hour.">
+<meta property="og:url" content="https://gethydropulse.com/hydration/heart-rate-and-hydration/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0F191C">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gethydropulse.com/"}, {"@type": "ListItem", "position": 2, "name": "Heart rate & hydration", "item": "https://gethydropulse.com/hydration/heart-rate-and-hydration/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Does dehydration raise your heart rate?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Fluid loss reduces plasma volume, so the heart beats faster to maintain output — the effect known as cardiac drift during prolonged exercise. It is one signal among several, not a hydration meter."}}, {"@type": "Question", "name": "Do I have to know my maximum heart rate?", "acceptedAnswer": {"@type": "Answer", "text": "No. The app falls back to an age-based estimate. But that formula has a standard deviation of around ten beats per minute, so entering a real measured value meaningfully sharpens the model."}}, {"@type": "Question", "name": "Does it drain the battery to read heart rate all day?", "acceptedAnswer": {"@type": "Answer", "text": "It uses passive monitoring rather than a continuous high-rate stream, which is the low-power path Wear OS provides for exactly this kind of background use."}}, {"@type": "Question", "name": "What if my watch's heart-rate sensor is inaccurate?", "acceptedAnswer": {"@type": "Answer", "text": "Then the exertion component is correspondingly rough. A loose strap, tattoos and cold skin all degrade optical readings. Baseline and weather components are unaffected."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "HydroPulse", "operatingSystem": "Wear OS 3.0+", "applicationCategory": "HealthApplication", "description": "Why heart rate is a better proxy for fluid loss than step count, what heart-rate reserve means, and how HydroPulse turns it into millilitres per hour.", "url": "https://gethydropulse.com/hydration/heart-rate-and-hydration/", "inLanguage": "en", "installUrl": "https://play.google.com/store/apps/details?id=oytaub.hydropulse.app", "offers": {"@type": "Offer", "price": "2.59", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="mark" href="/"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2C12 3.2 5.8 10 5.8 14.1a6.2 6.2 0 0 0 12.4 0C18.2 10 12 3.2 12 3.2Z"/><path d="M8.4 14.4h2.1l1.1-2.4 1.4 4 1.1-1.6h1.5"/></svg><span>Heart Rate and Hydration — How a Watch Estimates Sweat Loss</span></a>
+  <nav class="langs" aria-label="Language"><a href="/hydration/heart-rate-and-hydration/" hreflang="en" aria-current="true">EN</a><a href="/fr/hydratation/frequence-cardiaque-et-hydratation/" hreflang="fr" >FR</a><a href="/es/hidratacion/frecuencia-cardiaca-e-hidratacion/" hreflang="es" >ES</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumbs"><a href="/">Home</a> &rsaquo; Heart rate &amp; hydration</p>
+<h1>Heart rate and hydration</h1>
+<p class="lede">Heart rate is the only continuously available signal on a watch that tracks how hard your body is actually working. That makes it the best available proxy for how fast you are losing fluid.</p>
+<h2>Why heart rate, and not steps</h2>
+<p>A step count says how much you moved, not how hard it was. Ten thousand flat steps in the shade and five thousand up a hill in the sun are the same number and nothing like the same metabolic cost. Heart rate separates them, because it responds to load rather than to distance.</p>
+<p>The useful form is heart-rate reserve: where your current rate sits between your own resting and maximum. Expressed that way, 140 bpm means something different for a trained 30-year-old and a sedentary 55-year-old, and the model treats them differently. Sweat rate scales with metabolic rate, and heart-rate reserve is a reasonable stand-in for metabolic rate outside a laboratory.</p>
+<p>There is a feedback loop worth knowing about. As you lose fluid, plasma volume falls and heart rate creeps upward at the same effort — cardiac drift. So a rising heart rate during a long steady session is itself weak evidence of accumulating deficit, and the estimate leans in the right direction as the session goes on.</p>
+<h2>What HydroPulse does here</h2>
+<ul class="checks"><li>Continuous passive heart-rate monitoring through Wear OS Health Services.</li><li>Heart-rate reserve computed from your own resting and maximum rate, editable in settings.</li><li>Exercise-state detection, so deliberate training is weighted differently from fidgeting.</li><li>A sweat multiplier that combines exertion with the heat index rather than treating them separately.</li><li>A transparent breakdown — every recommendation says whether heat, exertion or baseline drove it.</li></ul>
+<h2>How HydroPulse decides</h2>
+<ol class="steps"><li>You enter your weight, age and sweat profile once. That sets your personal baseline loss — the water you lose just by being alive and breathing.</li><li>The watch reads your heart rate continuously and converts it into a heart-rate-reserve fraction: how hard you are working relative to your own resting and maximum heart rate, not to an average person's.</li><li>Local temperature and humidity are fetched anonymously and turned into a heat-index multiplier, because the same effort costs far more fluid at 33 °C and 70 % humidity than at 18 °C.</li><li>Every drink you log is credited back to the ledger. When the running balance crosses your threshold, HydroPulse tells you — with a specific millilitre amount and the reason behind it.</li></ol>
+<h2>What to expect</h2>
+<p>Set your resting and maximum heart rate if you know them; the age-based default — roughly 220 minus your age — is a population formula with a wide spread, and correcting it is the single largest accuracy improvement available to you. Optical wrist sensors also lose accuracy at high intensity and in the cold, so the estimate is only as good as the signal it gets.</p>
+<ul class="shots"><li><figure><img src="/assets/screens/home.webp" width="400" height="400" loading="lazy" decoding="async" alt="HydroPulse home screen showing a 49 % hydration balance and a Log water button"><figcaption>Your balance as a dial, with the amount to drink now.</figcaption></figure></li><li><figure><img src="/assets/screens/notification.webp" width="400" height="400" loading="lazy" decoding="async" alt="A HydroPulse notification recommending 100 mL with a one-tap log action"><figcaption>One tap to log, one to snooze — the phone stays in your pocket.</figcaption></figure></li></ul>
+<p><a class="cta" href="https://play.google.com/store/apps/details?id=oytaub.hydropulse.app" rel="noopener"><img src="/assets/badges/en.png" width="216" height="84" alt="Get it on Google Play" loading="lazy" decoding="async"></a></p>
+<p class="muted">Wear OS 3.0+. One-time purchase — no subscription, no ads, no account. The app interface is in English.</p>
+<h2>Common questions</h2>
+<div class="faq"><h3>Does dehydration raise your heart rate?</h3><p>Yes. Fluid loss reduces plasma volume, so the heart beats faster to maintain output — the effect known as cardiac drift during prolonged exercise. It is one signal among several, not a hydration meter.</p><h3>Do I have to know my maximum heart rate?</h3><p>No. The app falls back to an age-based estimate. But that formula has a standard deviation of around ten beats per minute, so entering a real measured value meaningfully sharpens the model.</p><h3>Does it drain the battery to read heart rate all day?</h3><p>It uses passive monitoring rather than a continuous high-rate stream, which is the low-power path Wear OS provides for exactly this kind of background use.</p><h3>What if my watch's heart-rate sensor is inaccurate?</h3><p>Then the exertion component is correspondingly rough. A loose strap, tattoos and cold skin all degrade optical readings. Baseline and weather components are unaffected.</p></div>
+<h2>Where the model comes from</h2>
+<p>The baseline draws on IOM and EFSA adequate-intake figures, the sweat-rate component on ACSM exercise-hydration guidance, and the environmental multiplier on the US National Weather Service heat-index formula. These are population references adapted to what a watch can actually sense — a well-founded estimate, not a laboratory measurement.</p>
+<h2>Not a medical device</h2>
+<div class="callout"><p>HydroPulse produces an estimate, not a measurement. It is a wellness tool, not a medical device, and it does not diagnose, treat or monitor dehydration or any other condition. If you take diuretics, restrict fluid on medical advice, or have a kidney, heart or endocrine condition, follow your clinician's intake guidance rather than this app's. Seek urgent care for confusion, fainting, or heat illness.</p></div>
+<h2>Private by design</h2>
+<p>Your heart rate, activity and drink log never leave the watch. There is no account, no analytics SDK and no advertising SDK. The only thing HydroPulse sends off-device is a pair of coordinates to a public weather service, with no identifier attached.</p>
+<p><a href="/privacy/">Read the full privacy policy</a></p>
+<h2>More on hydration</h2>
+<ul class="cards"><li><a href="/hydration/water-reminder-wear-os/"><strong>On Wear OS</strong><span>A water reminder built for the watch, not a phone app with a complication.</span></a></li><li><a href="/hydration/hydration-for-running-and-training/"><strong>Running &amp; training</strong><span>Sweat-rate-aware reminders for runs, rides and gym sessions.</span></a></li><li><a href="/hydration/drinking-water-in-hot-weather/"><strong>Hot weather</strong><span>When heat and humidity raise your needs, the reminders move first.</span></a></li><li><a href="/hydration/forgetting-to-drink-water-at-work/"><strong>At work</strong><span>For desk days where six hours vanish between two glasses.</span></a></li><li><a href="/hydration/how-much-water-should-you-drink-a-day/"><strong>How much per day</strong><span>Where the 2-litre rule comes from, and why your number is not that.</span></a></li><li><a href="/hydration/signs-of-dehydration/"><strong>Signs of dehydration</strong><span>What mild dehydration actually feels like — and when it stops being mild.</span></a></li></ul>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <ul><li><a href="/">Home</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/terms/">Terms of service</a></li><li><a href="https://play.google.com/store/apps/details?id=oytaub.hydropulse.app" rel="noopener">Google Play</a></li></ul>
+  <p>HydroPulse — adaptive hydration for Wear OS. Estimates, not guesses.</p>
+</div></footer>
+</body>
+</html>
