@@ -71,7 +71,7 @@ Two halves, because no single tool covers both. **Lighthouse** (Google's own,
 driven headless against the installed Chrome via `npx`) scores performance,
 accessibility, best practices and SEO per page — but its SEO category is
 generic: it checks that a page *can* be indexed, and has no idea that
-`/fr/hydratation/au-bureau/` and `/hydration/forgetting-to-drink-water-at-work/`
+`/fr/hydratation/oublier-de-boire-au-bureau/` and `/hydration/forgetting-to-drink-water-at-work/`
 are the same page in two languages. **The static checks in `audit.py`** cover
 exactly that gap — reciprocal `hreflang` sets, canonicals pointing at their own
 language, sitemap coverage, duplicate titles or descriptions across languages,

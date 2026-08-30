@@ -15,7 +15,7 @@ Two halves, because no single tool covers both:
   performance, accessibility, best practices and SEO per page. Its SEO category is
   deliberately generic — it checks that a page *can* be indexed, not that a
   23-page trilingual site is wired together correctly. It has no idea that
-  `/fr/hydratation/au-bureau/` and `/hydration/forgetting-to-drink-water-at-work/` are the same page in two
+  `/fr/hydratation/oublier-de-boire-au-bureau/` and `/hydration/forgetting-to-drink-water-at-work/` are the same page in two
   languages.
 * **The static checks here** cover exactly that gap, and they are the ones that
   actually break silently: an hreflang set that is not reciprocal, a canonical
