@@ -28,20 +28,30 @@ ORIGIN = SITE["origin"]
 # The HydroPulse mark: a droplet with a pulse trace through it — the two halves
 # of the product in one glyph (water, and the heart rate that drives the model).
 # Kept in step with the launcher icon in store-assets/icon-512.png.
-MARK_SHAPES = ('<path d="M12 3.2C12 3.2 5.8 10 5.8 14.1a6.2 6.2 0 0 0 12.4 0C18.2 10 12 3.2 12 3.2Z"/>'
-               '<path d="M8.4 14.4h2.1l1.1-2.4 1.4 4 1.1-1.6h1.5"/>')
+DROPLET_PATH = "M12 3.2C12 3.2 5.8 10 5.8 14.1a6.2 6.2 0 0 0 12.4 0C18.2 10 12 3.2 12 3.2Z"
+PULSE_PATH = "M8.4 14.4h2.1l1.1-2.4 1.4 4 1.1-1.6h1.5"
+
+MARK_SHAPES = ('<path d="%s"/><path d="%s"/>' % (DROPLET_PATH, PULSE_PATH))
 
 MARK = ('<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
         'stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
         + MARK_SHAPES + '</svg>')
 
-# Same shapes on the app's near-black ground, for the browser tab. The PNG and
-# .ico fallbacks beside it are rendered from this file rather than downscaled
-# from the store icon, whose gradient turns to mud at 16px.
+# The droplet alone, on the app's near-black ground, for the browser tab.
+#
+# Two deliberate differences from the header mark. The droplet is *filled* rather
+# than stroked, and the pulse trace inside it is dropped: at 16px a 1.4px stroke
+# lands on roughly one pixel and the interior detail turns to noise, so what
+# survives is the silhouette. And the shape is the only thing on the tile, which
+# is what makes it identifiable in a strip of twenty tabs.
+#
+# The PNG and .ico fallbacks are rendered from this file rather than downscaled
+# from the store icon, whose gradient turns to mud at 16px. Render them with a
+# real SVG engine (see the note in README.md) — ImageMagick's built-in renderer
+# silently drops these paths and leaves you a blank dark square.
 FAVICON_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">'
                '<rect width="24" height="24" rx="5" fill="#0F191C"/>'
-               '<g fill="none" stroke="#38B6E8" stroke-width="1.5" stroke-linecap="round" '
-               'stroke-linejoin="round">' + MARK_SHAPES + '</g></svg>')
+               '<path d="' + DROPLET_PATH + '" fill="#38B6E8"/></svg>')
 
 
 # ------------------------------------------------------------------ paths ----
