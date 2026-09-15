@@ -258,6 +258,33 @@ def check_sitemap(pages):
             fail("/robots.txt", "disallows the whole site")
 
 
+def check_agents(pages):
+    """llms.txt follows llmstxt.org and links only to built pages; every page
+    loads the WebMCP tools."""
+    path = os.path.join(ROOT, "llms.txt")
+    if not os.path.exists(path):
+        fail("/llms.txt", "missing")
+    else:
+        lines = open(path, encoding="utf-8").read().splitlines()
+        if not lines or not lines[0].startswith("# "):
+            fail("/llms.txt", "first line must be a single H1")
+        if not any(l.startswith("> ") for l in lines):
+            fail("/llms.txt", "no blockquote summary")
+        if not any(l.startswith("## ") for l in lines):
+            fail("/llms.txt", "no H2 link sections")
+        for url in re.findall(r"\]\((%s[^)]*)\)" % re.escape(ORIGIN), "\n".join(lines)):
+            target = url.replace(ORIGIN, "")
+            if target not in pages and not os.path.exists(os.path.join(ROOT, target.lstrip("/"))):
+                fail("/llms.txt", "links to %s, which is not built" % target)
+
+    if not os.path.exists(os.path.join(ROOT, "assets", "webmcp.js")):
+        fail("/assets/webmcp.js", "missing")
+    for page, f in sorted(pages.items()):
+        with open(f, encoding="utf-8") as fh:
+            if 'src="/assets/webmcp.js"' not in fh.read():
+                fail(page, "does not load /assets/webmcp.js")
+
+
 # ------------------------------------------------------------- lighthouse ----
 
 CATEGORIES = ["performance", "accessibility", "best-practices", "seo"]
@@ -347,6 +374,7 @@ def main():
 
     check_pages(pages)
     check_sitemap(pages)
+    check_agents(pages)
 
     if args.lighthouse:
         targets = sorted(pages) if args.all else sample_paths(pages)
