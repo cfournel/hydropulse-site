@@ -135,6 +135,8 @@ def expected_alternates(path):
     for key in TOPICS:
         urls = {}
         for l in LANGS:
+            if key not in l["topics"]:
+                continue  # German and Portuguese publish only the product topics
             prefix = "/%s" % l["base"] if l["base"] else ""
             urls[l["code"]] = "%s/%s/%s/" % (prefix, l["topic_dir"],
                                              l["topics"][key]["slug"])

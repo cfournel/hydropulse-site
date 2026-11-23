@@ -7,6 +7,9 @@
   var DATA = {
   "topics": [
     "wearos",
+    "galaxy",
+    "pixel",
+    "best",
     "sport",
     "heat",
     "work",
@@ -20,8 +23,8 @@
         "name": "HydroPulse",
         "summary": "A Wear OS water reminder that adapts to your heart rate, your activity and the weather, so it nudges you when your body needs water — not on a fixed timer.",
         "platform": "Wear OS 3.0+",
-        "price": "USD 2.59, one-time purchase (no subscription, no ads, no account)",
-        "app_interface_language": "English",
+        "price": "USD 0.69, one-time purchase (no subscription, no ads, no account)",
+        "app_interface_language": "English, French, Spanish, German, Portuguese",
         "install_url": "https://play.google.com/store/apps/details?id=oytaub.hydropulse.app",
         "home_url": "https://gethydropulse.com/",
         "privacy_url": "https://gethydropulse.com/privacy/",
@@ -54,6 +57,24 @@
           "title": "A water reminder built for Wear OS",
           "summary": "A native Wear OS water reminder with a tile, a complication and one-tap logging. Works on Pixel Watch, Galaxy Watch and any Wear OS 3.0+ device.",
           "url": "https://gethydropulse.com/hydration/water-reminder-wear-os/"
+        },
+        {
+          "id": "galaxy",
+          "title": "A water reminder for Samsung Galaxy Watch",
+          "summary": "A water reminder app for Galaxy Watch 4, 5, 6, 7 and Ultra that reacts to your heart rate, your workouts and the weather, with a tile and one-tap logging.",
+          "url": "https://gethydropulse.com/hydration/water-reminder-galaxy-watch/"
+        },
+        {
+          "id": "pixel",
+          "title": "A water reminder for Google Pixel Watch",
+          "summary": "A water reminder for Pixel Watch 1, 2, 3 and 4: it reads your heart rate and the weather to tell you when to drink, with a tile and one-tap logging.",
+          "url": "https://gethydropulse.com/hydration/water-reminder-pixel-watch/"
+        },
+        {
+          "id": "best",
+          "title": "Water reminder apps for Wear OS, compared",
+          "summary": "Samsung Health, Fitbit, timer-based reminder apps and HydroPulse compared for Wear OS watches: what each one does on the wrist, and who it suits.",
+          "url": "https://gethydropulse.com/hydration/best-water-reminder-apps-wear-os/"
         },
         {
           "id": "sport",
@@ -98,8 +119,8 @@
         "name": "HydroPulse",
         "summary": "Un rappel de boire de l'eau sur Wear OS qui s'adapte à votre fréquence cardiaque, à votre activité et à la météo : il vous alerte quand votre corps en a besoin.",
         "platform": "Wear OS 3.0+",
-        "price": "USD 2.59, one-time purchase (no subscription, no ads, no account)",
-        "app_interface_language": "English",
+        "price": "USD 0.69, one-time purchase (no subscription, no ads, no account)",
+        "app_interface_language": "English, French, Spanish, German, Portuguese",
         "install_url": "https://play.google.com/store/apps/details?id=oytaub.hydropulse.app",
         "home_url": "https://gethydropulse.com/fr/",
         "privacy_url": "https://gethydropulse.com/privacy/",
@@ -132,6 +153,24 @@
           "title": "Un rappel d'hydratation conçu pour Wear OS",
           "summary": "Un rappel d'hydratation natif Wear OS avec tuile, complication et enregistrement en un geste. Compatible Pixel Watch, Galaxy Watch et Wear OS 3.0+.",
           "url": "https://gethydropulse.com/fr/hydratation/rappel-boire-de-l-eau-wear-os/"
+        },
+        {
+          "id": "galaxy",
+          "title": "Un rappel pour boire de l'eau sur Samsung Galaxy Watch",
+          "summary": "Une appli de rappel d'eau pour Galaxy Watch 4, 5, 6, 7 et Ultra qui suit votre pouls, vos séances et la météo, avec une tuile et un ajout en un geste.",
+          "url": "https://gethydropulse.com/fr/hydratation/rappel-boire-de-l-eau-galaxy-watch/"
+        },
+        {
+          "id": "pixel",
+          "title": "Un rappel pour boire de l'eau sur Google Pixel Watch",
+          "summary": "Un rappel d'eau pour Pixel Watch 1, 2, 3 et 4 : il lit votre pouls et la météo pour vous dire quand boire, avec une tuile et un ajout en un geste.",
+          "url": "https://gethydropulse.com/fr/hydratation/rappel-boire-de-l-eau-pixel-watch/"
+        },
+        {
+          "id": "best",
+          "title": "Applis de rappel d'eau pour Wear OS : le comparatif",
+          "summary": "Samsung Health, Fitbit, applis de rappel à minuteur et HydroPulse comparés sur montre Wear OS : ce que chacun fait au poignet, et pour qui.",
+          "url": "https://gethydropulse.com/fr/hydratation/meilleures-applis-rappel-eau-wear-os/"
         },
         {
           "id": "sport",
@@ -176,8 +215,8 @@
         "name": "HydroPulse",
         "summary": "Un recordatorio de beber agua para Wear OS que se adapta a tu pulso, tu actividad y el tiempo: te avisa cuando tu cuerpo lo necesita, no por reloj.",
         "platform": "Wear OS 3.0+",
-        "price": "USD 2.59, one-time purchase (no subscription, no ads, no account)",
-        "app_interface_language": "English",
+        "price": "USD 0.69, one-time purchase (no subscription, no ads, no account)",
+        "app_interface_language": "English, French, Spanish, German, Portuguese",
         "install_url": "https://play.google.com/store/apps/details?id=oytaub.hydropulse.app",
         "home_url": "https://gethydropulse.com/es/",
         "privacy_url": "https://gethydropulse.com/privacy/",
@@ -210,6 +249,24 @@
           "title": "Un recordatorio de agua hecho para Wear OS",
           "summary": "Un recordatorio de hidratación nativo de Wear OS con tile, complicación y registro de un toque. Compatible con Pixel Watch, Galaxy Watch y Wear OS 3.0+.",
           "url": "https://gethydropulse.com/es/hidratacion/recordatorio-de-agua-wear-os/"
+        },
+        {
+          "id": "galaxy",
+          "title": "Un recordatorio para beber agua en Samsung Galaxy Watch",
+          "summary": "Una app de recordatorio de agua para Galaxy Watch 4, 5, 6, 7 y Ultra que sigue tu pulso, tus entrenamientos y el clima, con tarjeta y registro en un toque.",
+          "url": "https://gethydropulse.com/es/hidratacion/recordatorio-de-agua-galaxy-watch/"
+        },
+        {
+          "id": "pixel",
+          "title": "Un recordatorio para beber agua en Google Pixel Watch",
+          "summary": "Un recordatorio de agua para Pixel Watch 1, 2, 3 y 4: lee tu pulso y el clima para decirte cuándo beber, con tarjeta y registro en un toque.",
+          "url": "https://gethydropulse.com/es/hidratacion/recordatorio-de-agua-pixel-watch/"
+        },
+        {
+          "id": "best",
+          "title": "Apps de recordatorio de agua para Wear OS, comparadas",
+          "summary": "Samsung Health, Fitbit, apps de recordatorio con temporizador y HydroPulse comparadas en relojes Wear OS: qué hace cada una en la muñeca y para quién.",
+          "url": "https://gethydropulse.com/es/hidratacion/mejores-apps-recordatorio-agua-wear-os/"
         },
         {
           "id": "sport",
@@ -246,6 +303,126 @@
           "title": "Frecuencia cardíaca e hidratación",
           "summary": "Por qué el pulso predice la pérdida de líquido mejor que los pasos, qué es la reserva cardíaca y cómo HydroPulse la convierte en mililitros por hora.",
           "url": "https://gethydropulse.com/es/hidratacion/frecuencia-cardiaca-e-hidratacion/"
+        }
+      ]
+    },
+    "de": {
+      "app": {
+        "name": "HydroPulse",
+        "summary": "Eine Trinkerinnerung für Wear OS, die sich nach Puls, Aktivität und Wetter richtet und dich erinnert, wenn dein Körper Wasser braucht — nicht nach Timer.",
+        "platform": "Wear OS 3.0+",
+        "price": "USD 0.69, one-time purchase (no subscription, no ads, no account)",
+        "app_interface_language": "English, French, Spanish, German, Portuguese",
+        "install_url": "https://play.google.com/store/apps/details?id=oytaub.hydropulse.app",
+        "home_url": "https://gethydropulse.com/de/",
+        "privacy_url": "https://gethydropulse.com/privacy/",
+        "terms_url": "https://gethydropulse.com/terms/",
+        "contact": "support@gethydropulse.com",
+        "how_it_works": [
+          "Du gibst einmal Gewicht, Alter und Schweißprofil ein. Daraus ergibt sich dein persönlicher Grundverlust — das Wasser, das du allein durch Atmen und Leben verlierst.",
+          "Die Uhr misst laufend deinen Puls und rechnet ihn in einen Anteil deiner Herzfrequenzreserve um: wie stark du dich anstrengst, gemessen an deinem eigenen Ruhe- und Maximalpuls.",
+          "Temperatur und Luftfeuchtigkeit vor Ort werden anonym abgerufen und in einen Hitzeindex-Faktor umgerechnet, denn dieselbe Anstrengung kostet bei 33 °C und 70 % Luftfeuchte viel mehr Flüssigkeit als bei 18 °C.",
+          "Jedes eingetragene Getränk wird der Bilanz gutgeschrieben. Fällt der Stand unter deine Schwelle, meldet sich HydroPulse — mit einer Menge in Millilitern und dem Grund."
+        ],
+        "features": [
+          "Eine laufende Flüssigkeitsbilanz statt eines Countdowns — der Abstand zwischen Erinnerungen folgt deinem Tag.",
+          "Schweißschätzung aus dem Puls, bezogen auf deinen eigenen Ruhe- und Maximalpuls.",
+          "Live-Temperatur und Luftfeuchte über einen Hitzeindex-Faktor.",
+          "Jede Erinnerung nennt eine Menge in mL und einen Grund: Hitze, Anstrengung oder Grundbedarf.",
+          "Drei Dringlichkeitsstufen, damit ein Hinweis nicht wie eine Warnung aussieht.",
+          "Native Wear-OS-Kachel und Zifferblatt-Komplikation: deine Bilanz auf einen Blick.",
+          "Eintragen mit einem Tipp aus der Benachrichtigung, dazu 15 Minuten Schlummern.",
+          "Ruhezeiten, damit sie dich nicht weckt.",
+          "Einheiten in mL, fl oz oder Schlucken, und deine eigene Schwelle."
+        ],
+        "privacy": "Puls, Aktivität und Trinkprotokoll verlassen nie die Uhr. Kein Konto, kein Werbe-SDK, keine Nutzungsanalyse. Nur zwei Dinge gehen hinaus: Koordinaten an einen öffentlichen Wetterdienst, ohne Kennung, und ein Absturzbericht, falls die App abstürzt. Keines davon enthält Gesundheitsdaten.",
+        "methodology": "Der Grundbedarf stützt sich auf Referenzwerte von IOM und EFSA, der Schweißanteil auf die Trinkempfehlungen des ACSM für Sport, der Umgebungsfaktor auf die Hitzeindex-Formel des US-Wetterdienstes. Bevölkerungswerte, angepasst an das, was eine Uhr messen kann — eine begründete Schätzung, keine Labormessung.",
+        "medical_disclaimer": "HydroPulse liefert eine Schätzung, keine Messung. Es ist ein Wellness-Werkzeug, kein Medizinprodukt, und diagnostiziert, behandelt oder überwacht weder Dehydrierung noch eine andere Erkrankung. Wenn du Entwässerungsmittel nimmst, ärztlich die Trinkmenge begrenzen sollst oder eine Nieren-, Herz- oder Hormonerkrankung hast, folge den Vorgaben deiner Ärztin oder deines Arztes. Bei Verwirrtheit, Ohnmacht oder Hitzschlag sofort Hilfe holen."
+      },
+      "topics": [
+        {
+          "id": "wearos",
+          "title": "Eine Trinkerinnerung für Wear OS",
+          "summary": "Eine native Trinkerinnerung für Wear OS mit Kachel, Komplikation und Eintragen mit einem Tipp. Für Pixel Watch, Galaxy Watch und alle Wear OS 3.0+ Uhren.",
+          "url": "https://gethydropulse.com/de/trinken/trinkerinnerung-wear-os/"
+        },
+        {
+          "id": "galaxy",
+          "title": "Eine Trinkerinnerung für die Samsung Galaxy Watch",
+          "summary": "Eine Trinkerinnerung für Galaxy Watch 4, 5, 6, 7 und Ultra, die Puls, Training und Wetter berücksichtigt, mit Kachel und Eintragen mit einem Tipp.",
+          "url": "https://gethydropulse.com/de/trinken/trinkerinnerung-galaxy-watch/"
+        },
+        {
+          "id": "pixel",
+          "title": "Eine Trinkerinnerung für die Google Pixel Watch",
+          "summary": "Eine Trinkerinnerung für Pixel Watch 1, 2, 3 und 4: Sie liest Puls und Wetter, sagt dir, wann du trinken solltest, und trägt mit einem Tipp ein.",
+          "url": "https://gethydropulse.com/de/trinken/trinkerinnerung-pixel-watch/"
+        },
+        {
+          "id": "best",
+          "title": "Trinkerinnerung-Apps für Wear OS im Vergleich",
+          "summary": "Samsung Health, Fitbit, Timer-Apps und HydroPulse auf Wear-OS-Uhren im Vergleich: was jede Lösung am Handgelenk kann und für wen sie passt.",
+          "url": "https://gethydropulse.com/de/trinken/beste-trinkerinnerung-apps-wear-os/"
+        }
+      ]
+    },
+    "pt": {
+      "app": {
+        "name": "HydroPulse",
+        "summary": "Um lembrete de água para Wear OS que se adapta ao seu pulso, à sua atividade e ao clima, e avisa quando o seu corpo precisa de água — não num horário fixo.",
+        "platform": "Wear OS 3.0+",
+        "price": "USD 0.69, one-time purchase (no subscription, no ads, no account)",
+        "app_interface_language": "English, French, Spanish, German, Portuguese",
+        "install_url": "https://play.google.com/store/apps/details?id=oytaub.hydropulse.app",
+        "home_url": "https://gethydropulse.com/pt/",
+        "privacy_url": "https://gethydropulse.com/privacy/",
+        "terms_url": "https://gethydropulse.com/terms/",
+        "contact": "support@gethydropulse.com",
+        "how_it_works": [
+          "Você informa uma vez o peso, a idade e o perfil de transpiração. Isso define a sua perda básica pessoal — a água que você perde só por respirar e viver.",
+          "O relógio lê o seu pulso continuamente e o converte em fração da reserva cardíaca: o quanto você se esforça em relação ao seu próprio pulso de repouso e máximo.",
+          "A temperatura e a umidade locais são obtidas de forma anônima e viram um multiplicador de índice de calor, porque o mesmo esforço custa muito mais líquido a 33 °C e 70 % de umidade do que a 18 °C.",
+          "Cada bebida registrada volta para o balanço. Quando o saldo passa do seu limite, o HydroPulse avisa — com uma quantidade em mililitros e o motivo."
+        ],
+        "features": [
+          "Um balanço hídrico contínuo, não uma contagem regressiva — o intervalo entre lembretes segue o seu dia.",
+          "Estimativa de suor pelo pulso, com base no seu próprio pulso de repouso e máximo.",
+          "Temperatura e umidade ao vivo, por um multiplicador de índice de calor.",
+          "Cada alerta traz uma quantidade em mL e um motivo: calor, esforço ou necessidade básica.",
+          "Três níveis de urgência, para um lembrete não parecer um alarme.",
+          "Bloco (Tile) nativo do Wear OS e complicação de mostrador: o seu saldo num relance.",
+          "Registro com um toque na notificação, e adiar 15 minutos.",
+          "Horário silencioso, para não acordar você.",
+          "Unidades em mL, fl oz ou goles, e o seu próprio limite."
+        ],
+        "privacy": "O seu pulso, a sua atividade e o seu registro de bebidas nunca saem do relógio. Sem conta, sem SDK de anúncios, sem análise de uso. Só duas coisas saem: coordenadas para um serviço público de clima, sem identificador, e um relatório de falha se o app travar. Nenhuma leva dados de saúde.",
+        "methodology": "A necessidade básica se apoia nos valores de referência do IOM e da EFSA, o suor nas recomendações de hidratação esportiva do ACSM, e o fator ambiental na fórmula de índice de calor do serviço meteorológico dos EUA. Referências populacionais adaptadas ao que um relógio consegue medir — uma estimativa fundamentada, não uma medição de laboratório.",
+        "medical_disclaimer": "O HydroPulse produz uma estimativa, não uma medição. É uma ferramenta de bem-estar, não um dispositivo médico, e não diagnostica, trata nem monitora desidratação ou outra condição. Se você toma diuréticos, tem restrição de líquidos por orientação médica ou uma doença renal, cardíaca ou endócrina, siga a orientação do seu médico. Em caso de confusão, desmaio ou insolação, procure atendimento urgente."
+      },
+      "topics": [
+        {
+          "id": "wearos",
+          "title": "Um lembrete de água feito para Wear OS",
+          "summary": "Um lembrete de água nativo para Wear OS com Bloco, complicação e registro em um toque. Funciona em Pixel Watch, Galaxy Watch e relógios Wear OS 3.0+.",
+          "url": "https://gethydropulse.com/pt/hidratacao/lembrete-de-agua-wear-os/"
+        },
+        {
+          "id": "galaxy",
+          "title": "Um lembrete para beber água no Samsung Galaxy Watch",
+          "summary": "Um lembrete de água para Galaxy Watch 4, 5, 6, 7 e Ultra que considera o pulso, os treinos e o clima, com Bloco e registro em um toque.",
+          "url": "https://gethydropulse.com/pt/hidratacao/lembrete-de-agua-galaxy-watch/"
+        },
+        {
+          "id": "pixel",
+          "title": "Um lembrete para beber água no Google Pixel Watch",
+          "summary": "Um lembrete de água para Pixel Watch 1, 2, 3 e 4: lê o pulso e o clima para dizer quando beber, com Bloco e registro em um toque.",
+          "url": "https://gethydropulse.com/pt/hidratacao/lembrete-de-agua-pixel-watch/"
+        },
+        {
+          "id": "best",
+          "title": "Apps de lembrete de água para Wear OS, comparados",
+          "summary": "Samsung Health, Fitbit, apps de cronômetro e HydroPulse comparados em relógios Wear OS: o que cada um faz no pulso e para quem serve.",
+          "url": "https://gethydropulse.com/pt/hidratacao/melhores-apps-lembrete-de-agua-wear-os/"
         }
       ]
     }

@@ -7,7 +7,7 @@ the templates, hreflang alternates and sitemap follow automatically. Keep the
 them, not on the slugs, so a missing key silently breaks that topic's alternate
 set.
 
-Note on honesty: the app's own interface is English-only today. The site is
+Note on honesty: the app interface is in English, French, Spanish, German and Portuguese since 1.39. The site is
 translated because search demand is per-language, but no copy here claims a
 localised app UI — `ui["app_lang_note"]` says so explicitly on every page.
 """
@@ -17,13 +17,15 @@ SITE = {
     "play": "https://play.google.com/store/apps/details?id=oytaub.hydropulse.app",
     "package": "oytaub.hydropulse.app",
     "email": "support@gethydropulse.com",
-    "updated": "2026-08-30",
+    "updated": "2026-11-23",
     # Google Search Console verification token for a "URL prefix" property — the
     # content= value of the google-site-verification meta tag. Leave empty when
     # the property is verified by DNS TXT record instead (preferred: a domain
     # property covers every subdomain and both schemes and cannot be lost by a
     # template change).
     "search_console": "",
+    # Base price in the Play Console (Monetize > App pricing). Keep in sync when it changes.
+    "price_usd": "0.69",
 }
 
 # Order used for topic cards and the sitemap. Chosen for search intent, not for
@@ -44,7 +46,7 @@ EN = {
         "home_crumb": "Home",
         "badge_alt": "Get it on Google Play",
         "cta_note": "Wear OS 3.0+. One-time purchase — no subscription, no ads, no account.",
-        "app_lang_note": "The app interface is in English.",
+        "app_lang_note": "The app is in English, French, Spanish, German and Portuguese.",
         "how_title": "How HydroPulse decides",
         "how_steps": [
             "You enter your weight, age and sweat profile once. That sets your personal baseline loss — the water you lose just by being alive and breathing.",
@@ -521,7 +523,7 @@ FR = {
         "home_crumb": "Accueil",
         "badge_alt": "Disponible sur Google Play",
         "cta_note": "Wear OS 3.0+. Achat unique — sans abonnement, sans publicité, sans compte.",
-        "app_lang_note": "L'interface de l'application est en anglais.",
+        "app_lang_note": "L'application est en français, anglais, espagnol, allemand et portugais.",
         "how_title": "Comment HydroPulse décide",
         "how_steps": [
             "Vous saisissez une fois votre poids, votre âge et votre profil de transpiration. Cela fixe votre perte de base personnelle — l'eau que vous perdez simplement en respirant et en vivant.",
@@ -1032,7 +1034,7 @@ ES = {
         "home_crumb": "Inicio",
         "badge_alt": "Disponible en Google Play",
         "cta_note": "Wear OS 3.0+. Pago único: sin suscripción, sin anuncios, sin cuenta.",
-        "app_lang_note": "La interfaz de la aplicación está en inglés.",
+        "app_lang_note": "La aplicación está en español, inglés, francés, alemán y portugués.",
         "how_title": "Cómo decide HydroPulse",
         "how_steps": [
             "Introduces una sola vez tu peso, tu edad y tu perfil de sudoración. Eso fija tu pérdida basal personal: el agua que pierdes simplemente por respirar y estar vivo.",
@@ -1511,4 +1513,12 @@ ES = {
     },
 }
 
-LANGS = [EN, FR, ES]
+# Pages added 2026-11-23 (see content_extra.py): product pages first in the card order.
+from content_extra import EN_TOPICS, FR_TOPICS, ES_TOPICS, DE, PT  # noqa: E402
+
+TOPICS[1:1] = ["galaxy", "pixel", "best"]
+EN["topics"].update(EN_TOPICS)
+FR["topics"].update(FR_TOPICS)
+ES["topics"].update(ES_TOPICS)
+
+LANGS = [EN, FR, ES, DE, PT]

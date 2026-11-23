@@ -174,11 +174,13 @@ def cta(lang):
     the width/height attributes match the file's own aspect ratio.
     """
     ui = lang["ui"]
+    # A language without its own badge file yet shows the English one rather than a broken image.
+    badge = lang["code"] if os.path.exists(os.path.join(ROOT, "assets", "badges", lang["code"] + ".png")) else "en"
     return ('<p><a class="cta" href="%s" rel="noopener">'
             '<img src="/assets/badges/%s.png" width="216" height="84" '
             'alt="%s" loading="lazy" decoding="async"></a></p>\n'
             '<p class="muted">%s %s</p>\n'
-            % (SITE["play"], lang["code"], esc(ui["badge_alt"]),
+            % (SITE["play"], badge, esc(ui["badge_alt"]),
                esc(ui["cta_note"]), esc(ui["app_lang_note"])))
 
 
@@ -232,9 +234,15 @@ def screens(lang, only=None):
     return '<ul class="shots">%s</ul>\n' % "".join(figures)
 
 
+def topics_of(lang):
+    """The topics this language publishes, in TOPICS order. German and Portuguese carry only
+    the product pages; a topic missing from a language simply has no alternate there."""
+    return [k for k in TOPICS if k in lang["topics"]]
+
+
 def topic_cards(lang, exclude=None):
     lis = []
-    for key in TOPICS:
+    for key in topics_of(lang):
         if key == exclude:
             continue
         t = lang["topics"][key]
@@ -258,7 +266,7 @@ def alternates_home():
 
 
 def alternates_topic(key):
-    return [(l["code"], topic_url(l, key)) for l in LANGS]
+    return [(l["code"], topic_url(l, key)) for l in LANGS if key in l["topics"]]
 
 
 def app_jsonld(lang, url, desc):
@@ -272,7 +280,7 @@ def app_jsonld(lang, url, desc):
         "url": ORIGIN + url,
         "inLanguage": lang["code"],
         "installUrl": SITE["play"],
-        "offers": {"@type": "Offer", "price": "2.59", "priceCurrency": "USD"},
+        "offers": {"@type": "Offer", "price": SITE["price_usd"], "priceCurrency": "USD"},
     }
 
 
@@ -545,7 +553,7 @@ def build_sitemap():
     for lang in LANGS:
         entries.append((home_url(lang), alternates_home(), "1.0"))
     for key in TOPICS:
-        for lang in LANGS:
+        for lang in [l for l in LANGS if key in l["topics"]]:
             entries.append((topic_url(lang, key), alternates_topic(key), "0.8"))
     entries.append(("/privacy/", [("en", "/privacy/")], "0.3"))
     entries.append(("/terms/", [("en", "/terms/")], "0.3"))
@@ -586,8 +594,8 @@ def app_facts(lang):
         "name": "HydroPulse",
         "summary": lang["home"]["desc"],
         "platform": "Wear OS 3.0+",
-        "price": "USD 2.59, one-time purchase (no subscription, no ads, no account)",
-        "app_interface_language": "English",
+        "price": "USD %s, one-time purchase (no subscription, no ads, no account)" % SITE["price_usd"],
+        "app_interface_language": "English, French, Spanish, German, Portuguese",
         "install_url": SITE["play"],
         "home_url": ORIGIN + home_url(lang),
         "privacy_url": ORIGIN + privacy_url(lang),
@@ -615,7 +623,7 @@ def build_llms_txt():
         "> %s" % facts["summary"],
         "",
         "HydroPulse is a %s app sold on Google Play for %s. The app interface is in "
-        "English; this site is published in %s." % (
+        "English, French, Spanish, German and Portuguese; this site is published in %s." % (
             facts["platform"], facts["price"], ", ".join(l["name"] for l in LANGS)),
         "",
         "Not a medical device. %s" % facts["medical_disclaimer"],
@@ -631,7 +639,7 @@ def build_llms_txt():
         out.append("")
         out.append("- [%s](%s%s): %s" % (lang["home"]["h1"], ORIGIN, home_url(lang),
                                         lang["home"]["desc"]))
-        for key in TOPICS:
+        for key in topics_of(lang):
             t = lang["topics"][key]
             out.append("- [%s](%s%s): %s" % (t["h1"], ORIGIN, topic_url(lang, key), t["desc"]))
         out.append("")
@@ -763,7 +771,7 @@ def build_webmcp_js():
                 {"id": key, "title": lang["topics"][key]["h1"],
                  "summary": lang["topics"][key]["desc"],
                  "url": ORIGIN + topic_url(lang, key)}
-                for key in TOPICS
+                for key in topics_of(lang)
             ],
         }
     path = os.path.join(ROOT, "assets", "webmcp.js")
@@ -797,7 +805,7 @@ def main():
     written = [build_favicon_svg()]
     for lang in LANGS:
         written.append(build_home(lang))
-        for key in TOPICS:
+        for key in topics_of(lang):
             written.append(build_topic(lang, key))
     written.append(build_doc(
         "/privacy/", "Privacy Policy — HydroPulse",

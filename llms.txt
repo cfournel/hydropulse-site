@@ -2,7 +2,7 @@
 
 > A Wear OS water reminder that adapts to your heart rate, your activity and the weather, so it nudges you when your body needs water — not on a fixed timer.
 
-HydroPulse is a Wear OS 3.0+ app sold on Google Play for USD 2.59, one-time purchase (no subscription, no ads, no account). The app interface is in English; this site is published in English, Français, Español.
+HydroPulse is a Wear OS 3.0+ app sold on Google Play for USD 0.69, one-time purchase (no subscription, no ads, no account). The app interface is in English, French, Spanish, German and Portuguese; this site is published in English, Français, Español, Deutsch, Português.
 
 Not a medical device. HydroPulse produces an estimate, not a measurement. It is a wellness tool, not a medical device, and it does not diagnose, treat or monitor dehydration or any other condition. If you take diuretics, restrict fluid on medical advice, or have a kidney, heart or endocrine condition, follow your clinician's intake guidance rather than this app's. Seek urgent care for confusion, fainting, or heat illness.
 
@@ -19,6 +19,9 @@ Privacy: Your heart rate, activity and drink log never leave the watch. There is
 
 - [Hydration reminders that follow your body, not a timer](https://gethydropulse.com/): A Wear OS water reminder that adapts to your heart rate, your activity and the weather, so it nudges you when your body needs water — not on a fixed timer.
 - [A water reminder built for Wear OS](https://gethydropulse.com/hydration/water-reminder-wear-os/): A native Wear OS water reminder with a tile, a complication and one-tap logging. Works on Pixel Watch, Galaxy Watch and any Wear OS 3.0+ device.
+- [A water reminder for Samsung Galaxy Watch](https://gethydropulse.com/hydration/water-reminder-galaxy-watch/): A water reminder app for Galaxy Watch 4, 5, 6, 7 and Ultra that reacts to your heart rate, your workouts and the weather, with a tile and one-tap logging.
+- [A water reminder for Google Pixel Watch](https://gethydropulse.com/hydration/water-reminder-pixel-watch/): A water reminder for Pixel Watch 1, 2, 3 and 4: it reads your heart rate and the weather to tell you when to drink, with a tile and one-tap logging.
+- [Water reminder apps for Wear OS, compared](https://gethydropulse.com/hydration/best-water-reminder-apps-wear-os/): Samsung Health, Fitbit, timer-based reminder apps and HydroPulse compared for Wear OS watches: what each one does on the wrist, and who it suits.
 - [Hydration for running and training](https://gethydropulse.com/hydration/hydration-for-running-and-training/): How much to drink when you train, and how HydroPulse estimates sweat loss from your heart-rate reserve and the weather instead of a flat hourly rule.
 - [Drinking water in hot weather](https://gethydropulse.com/hydration/drinking-water-in-hot-weather/): Heat and humidity change how much you need to drink long before you feel thirsty. How HydroPulse uses live weather and the heat index to move reminders earlier.
 - [Forgetting to drink water at work](https://gethydropulse.com/hydration/forgetting-to-drink-water-at-work/): Why desk days end in a fluid deficit, and how a wrist reminder with a one-tap log and quiet hours survives a calendar full of meetings.
@@ -30,6 +33,9 @@ Privacy: Your heart rate, activity and drink log never leave the watch. There is
 
 - [Des rappels d'hydratation qui suivent votre corps, pas un minuteur](https://gethydropulse.com/fr/): Un rappel de boire de l'eau sur Wear OS qui s'adapte à votre fréquence cardiaque, à votre activité et à la météo : il vous alerte quand votre corps en a besoin.
 - [Un rappel d'hydratation conçu pour Wear OS](https://gethydropulse.com/fr/hydratation/rappel-boire-de-l-eau-wear-os/): Un rappel d'hydratation natif Wear OS avec tuile, complication et enregistrement en un geste. Compatible Pixel Watch, Galaxy Watch et Wear OS 3.0+.
+- [Un rappel pour boire de l'eau sur Samsung Galaxy Watch](https://gethydropulse.com/fr/hydratation/rappel-boire-de-l-eau-galaxy-watch/): Une appli de rappel d'eau pour Galaxy Watch 4, 5, 6, 7 et Ultra qui suit votre pouls, vos séances et la météo, avec une tuile et un ajout en un geste.
+- [Un rappel pour boire de l'eau sur Google Pixel Watch](https://gethydropulse.com/fr/hydratation/rappel-boire-de-l-eau-pixel-watch/): Un rappel d'eau pour Pixel Watch 1, 2, 3 et 4 : il lit votre pouls et la météo pour vous dire quand boire, avec une tuile et un ajout en un geste.
+- [Applis de rappel d'eau pour Wear OS : le comparatif](https://gethydropulse.com/fr/hydratation/meilleures-applis-rappel-eau-wear-os/): Samsung Health, Fitbit, applis de rappel à minuteur et HydroPulse comparés sur montre Wear OS : ce que chacun fait au poignet, et pour qui.
 - [Hydratation à la course et à l'entraînement](https://gethydropulse.com/fr/hydratation/hydratation-course-a-pied-et-entrainement/): Combien boire à l'effort, et comment HydroPulse estime la perte sudorale à partir de votre réserve cardiaque et de la météo plutôt que d'une règle horaire fixe.
 - [Boire de l'eau par forte chaleur](https://gethydropulse.com/fr/hydratation/boire-de-l-eau-par-forte-chaleur/): La chaleur et l'humidité changent vos besoins bien avant la soif. Comment HydroPulse utilise la météo en direct et l'indice de chaleur pour avancer les rappels.
 - [Oublier de boire au bureau](https://gethydropulse.com/fr/hydratation/oublier-de-boire-au-bureau/): Pourquoi les journées de bureau finissent en déficit hydrique, et comment un rappel au poignet avec enregistrement en un geste survit à un agenda chargé.
@@ -41,12 +47,31 @@ Privacy: Your heart rate, activity and drink log never leave the watch. There is
 
 - [Recordatorios de hidratación que siguen a tu cuerpo, no a un temporizador](https://gethydropulse.com/es/): Un recordatorio de beber agua para Wear OS que se adapta a tu pulso, tu actividad y el tiempo: te avisa cuando tu cuerpo lo necesita, no por reloj.
 - [Un recordatorio de agua hecho para Wear OS](https://gethydropulse.com/es/hidratacion/recordatorio-de-agua-wear-os/): Un recordatorio de hidratación nativo de Wear OS con tile, complicación y registro de un toque. Compatible con Pixel Watch, Galaxy Watch y Wear OS 3.0+.
+- [Un recordatorio para beber agua en Samsung Galaxy Watch](https://gethydropulse.com/es/hidratacion/recordatorio-de-agua-galaxy-watch/): Una app de recordatorio de agua para Galaxy Watch 4, 5, 6, 7 y Ultra que sigue tu pulso, tus entrenamientos y el clima, con tarjeta y registro en un toque.
+- [Un recordatorio para beber agua en Google Pixel Watch](https://gethydropulse.com/es/hidratacion/recordatorio-de-agua-pixel-watch/): Un recordatorio de agua para Pixel Watch 1, 2, 3 y 4: lee tu pulso y el clima para decirte cuándo beber, con tarjeta y registro en un toque.
+- [Apps de recordatorio de agua para Wear OS, comparadas](https://gethydropulse.com/es/hidratacion/mejores-apps-recordatorio-agua-wear-os/): Samsung Health, Fitbit, apps de recordatorio con temporizador y HydroPulse comparadas en relojes Wear OS: qué hace cada una en la muñeca y para quién.
 - [Hidratación para correr y entrenar](https://gethydropulse.com/es/hidratacion/hidratacion-para-correr-y-entrenar/): Cuánto beber al entrenar y cómo HydroPulse estima la pérdida por sudor a partir de tu reserva cardíaca y del clima, en vez de una regla fija por hora.
 - [Beber agua con mucho calor](https://gethydropulse.com/es/hidratacion/beber-agua-con-mucho-calor/): El calor y la humedad cambian cuánto necesitas beber antes de la sed. Cómo HydroPulse usa el clima y el índice de calor para adelantar los avisos.
 - [Olvidarse de beber agua en el trabajo](https://gethydropulse.com/es/hidratacion/olvidarse-de-beber-agua-en-el-trabajo/): Por qué las jornadas de oficina acaban en déficit hídrico, y cómo un aviso en la muñeca con registro de un toque sobrevive a una agenda llena.
 - [¿Cuánta agua hay que beber al día?](https://gethydropulse.com/es/hidratacion/cuanta-agua-hay-que-beber-al-dia/): La regla de los ocho vasos es una media poblacional, no tu objetivo. Qué determina de verdad tu necesidad diaria y cómo un reloj puede estimarla hora a hora.
 - [Señales de deshidratación](https://gethydropulse.com/es/hidratacion/senales-de-deshidratacion/): La deshidratación leve aparece como fatiga, dolor de cabeza y falta de concentración mucho antes que la sed. Las señales tempranas y las graves.
 - [Frecuencia cardíaca e hidratación](https://gethydropulse.com/es/hidratacion/frecuencia-cardiaca-e-hidratacion/): Por qué el pulso predice la pérdida de líquido mejor que los pasos, qué es la reserva cardíaca y cómo HydroPulse la convierte en mililitros por hora.
+
+## Hydration topics (Deutsch)
+
+- [Trinkerinnerungen, die deinem Körper folgen, nicht einer Uhrzeit](https://gethydropulse.com/de/): Eine Trinkerinnerung für Wear OS, die sich nach Puls, Aktivität und Wetter richtet und dich erinnert, wenn dein Körper Wasser braucht — nicht nach Timer.
+- [Eine Trinkerinnerung für Wear OS](https://gethydropulse.com/de/trinken/trinkerinnerung-wear-os/): Eine native Trinkerinnerung für Wear OS mit Kachel, Komplikation und Eintragen mit einem Tipp. Für Pixel Watch, Galaxy Watch und alle Wear OS 3.0+ Uhren.
+- [Eine Trinkerinnerung für die Samsung Galaxy Watch](https://gethydropulse.com/de/trinken/trinkerinnerung-galaxy-watch/): Eine Trinkerinnerung für Galaxy Watch 4, 5, 6, 7 und Ultra, die Puls, Training und Wetter berücksichtigt, mit Kachel und Eintragen mit einem Tipp.
+- [Eine Trinkerinnerung für die Google Pixel Watch](https://gethydropulse.com/de/trinken/trinkerinnerung-pixel-watch/): Eine Trinkerinnerung für Pixel Watch 1, 2, 3 und 4: Sie liest Puls und Wetter, sagt dir, wann du trinken solltest, und trägt mit einem Tipp ein.
+- [Trinkerinnerung-Apps für Wear OS im Vergleich](https://gethydropulse.com/de/trinken/beste-trinkerinnerung-apps-wear-os/): Samsung Health, Fitbit, Timer-Apps und HydroPulse auf Wear-OS-Uhren im Vergleich: was jede Lösung am Handgelenk kann und für wen sie passt.
+
+## Hydration topics (Português)
+
+- [Lembretes de água que seguem o seu corpo, não o relógio](https://gethydropulse.com/pt/): Um lembrete de água para Wear OS que se adapta ao seu pulso, à sua atividade e ao clima, e avisa quando o seu corpo precisa de água — não num horário fixo.
+- [Um lembrete de água feito para Wear OS](https://gethydropulse.com/pt/hidratacao/lembrete-de-agua-wear-os/): Um lembrete de água nativo para Wear OS com Bloco, complicação e registro em um toque. Funciona em Pixel Watch, Galaxy Watch e relógios Wear OS 3.0+.
+- [Um lembrete para beber água no Samsung Galaxy Watch](https://gethydropulse.com/pt/hidratacao/lembrete-de-agua-galaxy-watch/): Um lembrete de água para Galaxy Watch 4, 5, 6, 7 e Ultra que considera o pulso, os treinos e o clima, com Bloco e registro em um toque.
+- [Um lembrete para beber água no Google Pixel Watch](https://gethydropulse.com/pt/hidratacao/lembrete-de-agua-pixel-watch/): Um lembrete de água para Pixel Watch 1, 2, 3 e 4: lê o pulso e o clima para dizer quando beber, com Bloco e registro em um toque.
+- [Apps de lembrete de água para Wear OS, comparados](https://gethydropulse.com/pt/hidratacao/melhores-apps-lembrete-de-agua-wear-os/): Samsung Health, Fitbit, apps de cronômetro e HydroPulse comparados em relógios Wear OS: o que cada um faz no pulso e para quem serve.
 
 ## Policies
 
