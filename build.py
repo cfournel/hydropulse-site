@@ -18,6 +18,7 @@ page. Rerun after any edit to `content.py`; `git status` shows what changed.
 import html
 import json
 import os
+import urllib.parse
 import shutil
 
 from content import SITE, TOPICS, LANGS
@@ -148,13 +149,22 @@ def header(lang, alternates, title):
 """ % (home_url(lang), MARK, esc(title), esc(lang["ui"]["langs_label"]), langs)
 
 
-def footer(lang):
+def play_link(lang, page, placement):
+    """Play Store URL carrying an install referrer, so the Play Console attributes installs to
+    this site, page by page (Acquisition > Traffic source > UTM). No cookie, no script: Google
+    Play reads the referrer itself. JSON-LD and llms.txt keep the plain canonical URL."""
+    referrer = "utm_source=gethydropulse.com&utm_medium=site&utm_campaign=%s-%s&utm_content=%s" % (
+        lang["code"], page, placement)
+    return SITE["play"] + "&referrer=" + urllib.parse.quote(referrer, safe="")
+
+
+def footer(lang, page="home"):
     ui = lang["ui"]
     items = "".join("<li>%s</li>" % i for i in [
         '<a href="%s">%s</a>' % (home_url(lang), esc(ui["home_crumb"])),
         '<a href="%s">%s</a>' % (privacy_url(lang), esc(ui["foot_privacy"])),
         '<a href="%s">%s</a>' % (terms_url(lang), esc(ui["foot_terms"])),
-        '<a href="%s" rel="noopener">%s</a>' % (SITE["play"], esc(ui["foot_play"])),
+        '<a href="%s" rel="noopener">%s</a>' % (esc(play_link(lang, page, "footer")), esc(ui["foot_play"])),
     ])
     return """</main>
 <footer class="site-foot"><div class="wrap">
@@ -166,7 +176,7 @@ def footer(lang):
 """ % (items, esc(lang["ui"]["foot_tag"]))
 
 
-def cta(lang):
+def cta(lang, page="home"):
     """Official Google Play badge, localised, served from assets/badges/.
 
     Google's badge guidelines require the artwork unmodified, so it is an <img>
@@ -180,7 +190,7 @@ def cta(lang):
             '<img src="/assets/badges/%s.png" width="216" height="84" '
             'alt="%s" loading="lazy" decoding="async"></a></p>\n'
             '<p class="muted">%s %s</p>\n'
-            % (SITE["play"], badge, esc(ui["badge_alt"]),
+            % (esc(play_link(lang, page, "badge")), badge, esc(ui["badge_alt"]),
                esc(ui["cta_note"]), esc(ui["app_lang_note"])))
 
 
@@ -351,7 +361,7 @@ def build_topic(lang, key):
     body.append(how_it_works(lang))
     body.append("<h2>%s</h2>\n<p>%s</p>\n" % (esc(ui["expect_title"]), esc(t["expect"])))
     body.append(screens(lang, only={"home", "notification"}))
-    body.append(cta(lang))
+    body.append(cta(lang, key))
     body.append('<h2>%s</h2>\n<div class="faq">%s</div>\n' % (
         esc(ui["faq_title"]),
         "".join("<h3>%s</h3><p>%s</p>" % (esc(q), esc(a)) for q, a in t["faq"])))
@@ -361,7 +371,7 @@ def build_topic(lang, key):
 
     markup = (head(lang, t["title"], t["desc"], url, alts,
                    [crumbs_ld, faq_ld, app_jsonld(lang, url, t["desc"])])
-              + header(lang, alts, t["title"]) + "".join(body) + footer(lang))
+              + header(lang, alts, t["title"]) + "".join(body) + footer(lang, key))
     return write(url, markup)
 
 
