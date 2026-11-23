@@ -160,7 +160,7 @@ best-practices point.
 
 ## The Google Play badge
 
-`assets/badges/{en,fr,es}.png` are Google's own localised "Get it on Google Play"
+`assets/badges/{en,fr,es,de,pt}.png` are Google's own localised "Get it on Google Play"
 badges, downloaded from `play.google.com/intl/<locale>/badges/`. Google's badge
 guidelines require the artwork unmodified — no recolouring, cropping or
 redrawing — so `build.py` emits it as an `<img>` and the CSS only sizes it.
