@@ -1520,5 +1520,8 @@ TOPICS[1:1] = ["galaxy", "pixel", "best"]
 EN["topics"].update(EN_TOPICS)
 FR["topics"].update(FR_TOPICS)
 ES["topics"].update(ES_TOPICS)
+from content_guides_de_pt import DE_GUIDES, PT_GUIDES  # noqa: E402
+DE["topics"].update(DE_GUIDES)
+PT["topics"].update(PT_GUIDES)
 
 LANGS = [EN, FR, ES, DE, PT]

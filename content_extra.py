@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Pages added on 2026-11-23: Galaxy Watch, Pixel Watch and a "best water reminder apps for
-Wear OS" comparison (EN/FR/ES), plus German and Portuguese with the product pages only.
+Wear OS" comparison (EN/FR/ES), plus German and Portuguese (product pages here, the six
+background guides in content_guides_de_pt.py).
 
 Search data behind the choice (Brave, 2026-11-23): the site already ranks on "pixel watch
 hydration app" and "best water reminder app wear os", is absent on "galaxy watch water reminder

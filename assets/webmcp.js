@@ -363,6 +363,42 @@
           "title": "Trinkerinnerung-Apps für Wear OS im Vergleich",
           "summary": "Samsung Health, Fitbit, Timer-Apps und HydroPulse auf Wear-OS-Uhren im Vergleich: was jede Lösung am Handgelenk kann und für wen sie passt.",
           "url": "https://gethydropulse.com/de/trinken/beste-trinkerinnerung-apps-wear-os/"
+        },
+        {
+          "id": "sport",
+          "title": "Trinken beim Laufen und Training",
+          "summary": "Wie viel du beim Training trinken solltest und wie HydroPulse den Schweißverlust aus Herzfrequenzreserve und Wetter schätzt statt nach fester Stundenregel.",
+          "url": "https://gethydropulse.com/de/trinken/trinken-beim-laufen-und-training/"
+        },
+        {
+          "id": "heat",
+          "title": "Trinken bei Hitze",
+          "summary": "Hitze und Luftfeuchte ändern deinen Bedarf lange bevor du Durst spürst. Wie HydroPulse Live-Wetter und den Hitzeindex nutzt, um früher zu erinnern.",
+          "url": "https://gethydropulse.com/de/trinken/trinken-bei-hitze/"
+        },
+        {
+          "id": "work",
+          "title": "Trinken vergessen bei der Arbeit",
+          "summary": "Warum Bürotage im Flüssigkeitsdefizit enden und wie eine Erinnerung am Handgelenk mit Eintragen per Tipp und Ruhezeiten einen vollen Kalender übersteht.",
+          "url": "https://gethydropulse.com/de/trinken/trinken-vergessen-bei-der-arbeit/"
+        },
+        {
+          "id": "howmuch",
+          "title": "Wie viel Wasser sollte man am Tag trinken?",
+          "summary": "Die Acht-Gläser-Regel ist ein Durchschnitt, nicht dein Ziel. Was deinen täglichen Bedarf bestimmt und wie eine Uhr ihn Stunde für Stunde schätzen kann.",
+          "url": "https://gethydropulse.com/de/trinken/wie-viel-wasser-am-tag-trinken/"
+        },
+        {
+          "id": "signs",
+          "title": "Anzeichen von Dehydrierung",
+          "summary": "Leichte Dehydrierung zeigt sich als Müdigkeit, Kopfschmerz und Konzentrationsmangel, lange bevor Durst drängt. Frühe und ernste Zeichen, und wo eine App passt.",
+          "url": "https://gethydropulse.com/de/trinken/anzeichen-von-dehydrierung/"
+        },
+        {
+          "id": "heartrate",
+          "title": "Puls und Trinken",
+          "summary": "Warum der Puls ein besserer Hinweis auf Flüssigkeitsverlust ist als Schritte, was die Herzfrequenzreserve ist und wie HydroPulse daraus mL pro Stunde macht.",
+          "url": "https://gethydropulse.com/de/trinken/puls-und-trinken/"
         }
       ]
     },
@@ -423,6 +459,42 @@
           "title": "Apps de lembrete de água para Wear OS, comparados",
           "summary": "Samsung Health, Fitbit, apps de cronômetro e HydroPulse comparados em relógios Wear OS: o que cada um faz no pulso e para quem serve.",
           "url": "https://gethydropulse.com/pt/hidratacao/melhores-apps-lembrete-de-agua-wear-os/"
+        },
+        {
+          "id": "sport",
+          "title": "Hidratação para corrida e treino",
+          "summary": "Quanto beber quando você treina e como o HydroPulse estima a perda de suor pela reserva cardíaca e pelo clima, em vez de uma regra fixa por hora.",
+          "url": "https://gethydropulse.com/pt/hidratacao/hidratacao-para-corrida-e-treino/"
+        },
+        {
+          "id": "heat",
+          "title": "Beber água no calor",
+          "summary": "Calor e umidade mudam quanto você precisa beber muito antes da sede. Como o HydroPulse usa o clima ao vivo e o índice de calor para lembrar mais cedo.",
+          "url": "https://gethydropulse.com/pt/hidratacao/beber-agua-no-calor/"
+        },
+        {
+          "id": "work",
+          "title": "Esquecer de beber água no trabalho",
+          "summary": "Por que dias de escritório terminam com déficit de líquido e como um lembrete no pulso, com registro em um toque e horário silencioso, sobrevive à agenda cheia.",
+          "url": "https://gethydropulse.com/pt/hidratacao/esquecer-de-beber-agua-no-trabalho/"
+        },
+        {
+          "id": "howmuch",
+          "title": "Quanta água você deve beber por dia?",
+          "summary": "A regra dos oito copos é uma média, não a sua meta. O que define a sua necessidade diária e como um relógio pode estimá-la hora a hora.",
+          "url": "https://gethydropulse.com/pt/hidratacao/quanta-agua-beber-por-dia/"
+        },
+        {
+          "id": "signs",
+          "title": "Sinais de desidratação",
+          "summary": "A desidratação leve aparece como cansaço, dor de cabeça e falta de concentração muito antes da sede. Os sinais iniciais, os graves, e onde um app entra.",
+          "url": "https://gethydropulse.com/pt/hidratacao/sinais-de-desidratacao/"
+        },
+        {
+          "id": "heartrate",
+          "title": "Frequência cardíaca e hidratação",
+          "summary": "Por que o pulso indica melhor a perda de líquido do que os passos, o que é a reserva cardíaca e como o HydroPulse a transforma em mililitros por hora.",
+          "url": "https://gethydropulse.com/pt/hidratacao/frequencia-cardiaca-e-hidratacao/"
         }
       ]
     }
