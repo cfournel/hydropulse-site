@@ -158,7 +158,33 @@ def play_link(lang, page, placement):
     return SITE["play"] + "&referrer=" + urllib.parse.quote(referrer, safe="")
 
 
-def footer(lang, page="home"):
+# The other app by the same developer, linked from the home page only: one plain,
+# named link (no keyword anchor, no site-wide footer link), for visitors and the
+# press rather than for ranking.
+SISTER_APP = {
+    "en": ("Also by the same developer:", "Onira", "guided self-hypnosis for Android."),
+    "fr": ("Du même développeur :", "Onira", "l'auto-hypnose guidée sur Android."),
+    "es": ("Del mismo desarrollador:", "Onira", "autohipnosis guiada para Android."),
+    "de": ("Vom selben Entwickler:", "Onira", "geführte Selbsthypnose für Android."),
+    "pt": ("Do mesmo desenvolvedor:", "Onira", "auto-hipnose guiada para Android."),
+}
+SISTER_ORIGIN = "https://onirahypno.com"
+
+# The publisher as Google Play names it, shared with onirahypno.com's JSON-LD.
+PUBLISHER_LD = {
+    "@type": "Organization",
+    "name": "Oytaub",
+    "url": "https://play.google.com/store/apps/dev?id=8013150125250994565",
+}
+
+
+def sister_app(lang):
+    lead, name, what = SISTER_APP[lang["code"]]
+    return '\n  <p class="muted">%s <a href="%s%s">%s</a>, %s</p>' % (
+        esc(lead), SISTER_ORIGIN, home_url(lang), esc(name), esc(what))
+
+
+def footer(lang, page="home", sister=False):
     ui = lang["ui"]
     items = "".join("<li>%s</li>" % i for i in [
         '<a href="%s">%s</a>' % (home_url(lang), esc(ui["home_crumb"])),
@@ -169,11 +195,11 @@ def footer(lang, page="home"):
     return """</main>
 <footer class="site-foot"><div class="wrap">
   <ul>%s</ul>
-  <p>%s</p>
+  <p>%s</p>%s
 </div></footer>
 </body>
 </html>
-""" % (items, esc(lang["ui"]["foot_tag"]))
+""" % (items, esc(lang["ui"]["foot_tag"]), sister_app(lang) if sister else "")
 
 
 def cta(lang, page="home"):
@@ -291,6 +317,7 @@ def app_jsonld(lang, url, desc):
         "inLanguage": lang["code"],
         "installUrl": SITE["play"],
         "offers": {"@type": "Offer", "price": SITE["price_usd"], "priceCurrency": "USD"},
+        "author": PUBLISHER_LD,
     }
 
 
@@ -319,7 +346,7 @@ def build_home(lang):
     body.append(privacy_block(lang))
     markup = (head(lang, h["title"], h["desc"], url, alts,
                    [site_ld, app_jsonld(lang, url, h["desc"])])
-              + header(lang, alts, h["title"]) + "".join(body) + footer(lang))
+              + header(lang, alts, h["title"]) + "".join(body) + footer(lang, sister=True))
     return write(url, markup)
 
 
